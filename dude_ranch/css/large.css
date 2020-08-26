@@ -1,0 +1,31 @@
+@media only screen and (mid-width: 1028px){
+header,footer, nav, main{
+    max-width: 75rem;
+    margin: auto;
+}
+
+h1{
+    color: blue;
+}
+nav ul{
+    padding: 2%;
+}
+
+nav li{ width: automatic}
+nav a{
+    padding: .5rem 1rem;
+}
+
+main figure{
+    width: 31%;
+
+}
+div.news{
+    column-count: 3;
+}
+
+
+
+
+
+} /* end of media query*/
