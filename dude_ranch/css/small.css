@@ -20,6 +20,8 @@ header h1{
 
 header h2{
     margin: 0;
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 /*navigation rules here*/
