@@ -4,14 +4,11 @@ header,footer, nav, main{
     margin: auto;
 }
 
-h1{
-    color: blue;
-}
 nav ul{
-    padding: 2%;
+    padding: 0px 2%;
 }
 
-nav li{ width: automatic}
+nav li{ width: auto;}
 nav a{
     padding: .5rem 1rem;
 }
