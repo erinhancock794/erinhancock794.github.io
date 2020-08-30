@@ -408,7 +408,15 @@ body {
 
 header {
   background-color: #e4c517;
-  padding: 1rem 10%; }
+  padding: 1rem 10%;
+  display: flex; }
+
+header div {
+  padding: 5% 5% 0px 5%;
+  align-self: flex-end; }
+
+header img {
+  width: 20%; }
 
 header h1 {
   margin: 0;
@@ -417,7 +425,7 @@ header h1 {
 
 header h2 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300; }
 
 nav {
@@ -452,10 +460,17 @@ main {
 main h1 {
   color: #e4c517; }
 
-main figure img {
-  width: 50%; }
+figure.hero img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  float: center;
+  padding: none;
+  margin: 0 0 0 10%; }
 
-main figure.photo img {
+figure.photo img {
   margin: 0 0 0 10%;
   width: 100%;
   float: right; }
