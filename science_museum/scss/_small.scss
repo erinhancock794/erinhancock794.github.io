@@ -33,14 +33,17 @@ header h1 {
     font-weight: $heavyWeight;
 }
 header h2{
-	margin: 0; 
-	font-size: 1rem; 
-	font-weight: $regularWeight;
+    display: none;
 }
 
-nav {background-color: #111;}
-nav ul{margin:0; padding-left: $gutter;}
-nav li {list-style-type: none;}
+nav {
+    background-color: #111;
+}
+nav ul{margin:0; padding-right: $gutter;}
+nav li {
+    list-style-type: none;
+
+}
 nav li.active {background-color: #333}
 nav a {
     display: block;
@@ -51,21 +54,19 @@ nav a {
 }
 nav a:hover {background-color: #444;}
 
+figure.hero img {
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
 
 /*---Main---*/
 main{display: block; padding: 1rem $gutter;}
 main h1 {color: $primaryColor;}
 
-figure.hero img {
-        width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        float: center;
-        padding: none;
-        margin: 0 0 0 $gutter;
-
+figure.photo{
+    float: right;
 }
 
 figure.photo  img{
