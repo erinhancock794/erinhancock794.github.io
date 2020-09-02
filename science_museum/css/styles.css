@@ -407,7 +407,7 @@ body {
   font-size: 16px; }
 
 header {
-  background-color: #e4c517;
+  background-color: #448dec;
   padding: 1rem 10%;
   display: flex; }
 
@@ -462,7 +462,7 @@ main {
   padding: 1rem 10%; }
 
 main h1 {
-  color: #e4c517; }
+  color: #448dec; }
 
 figure.photo {
   float: right; }
