@@ -477,6 +477,8 @@ main figure.photo figcaption {
   font-size: .8rem; }
 
 footer {
+  width: 100vw;
+  display: block;
   background-color: #eee;
   text-align: center;
   padding: 1rem 10%; }
@@ -511,7 +513,7 @@ footer {
 
   /* end of media query */ }
 @media only screen and (min-width: 1028px) {
-  header, nav, main, footer {
+  header, nav, main {
     max-width: 1200px;
     margin: auto; }
 

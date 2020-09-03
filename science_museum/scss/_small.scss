@@ -83,6 +83,8 @@ main figure.photo figcaption {
 
 
 footer {
+    width: 100vw;
+    display: block;
     background-color: $footerColor;
     text-align: center;
     padding: 1rem $gutter;
