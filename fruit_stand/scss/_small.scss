@@ -20,8 +20,6 @@ header {
 header div{
 padding: 5% 5% 0px 5%;
 align-self: flex-end;
-
-
 }
 
 header img{
@@ -33,7 +31,9 @@ header h1 {
     font-weight: $heavyWeight;
 }
 header h2{
-    display: none;
+    font-size: 1rem;
+    color: red;
+    
 }
 
 nav {
