@@ -65,18 +65,17 @@ figure.hero img {
 main{display: block; padding: 1rem $gutter;}
 main h1 {color: $primaryColor;}
 
-figure.photo{
-    float: right;
+div.parent{
+    display: flex;
+    flex-wrap: wrap;
 }
-
-figure.photo  img{
-    margin: 0 0 0 $gutter;
+div.parent figure {
+    flex-basis: 50%;
+    margin: 0;
+}
+div.parent figure img{
     width: 100%;
-    float: right;
-}
-main figure.photo figcaption {
-    text-align: center; 
-    font-size: .8rem;
+    height: auto;
 }
 
 
