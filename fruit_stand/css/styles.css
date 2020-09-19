@@ -426,7 +426,7 @@ header h2 {
   font-size: 1rem; }
 
 nav {
-  background-color: #111; }
+  background-color: #222222; }
 
 nav ul {
   margin: 0;
@@ -440,7 +440,7 @@ nav li {
   padding-right: 2%; }
 
 nav li.active {
-  background-color: #333; }
+  background-color: #6f6f6f; }
 
 nav a {
   display: block;
@@ -451,7 +451,7 @@ nav a {
   text-decoration: none; }
 
 nav a:hover {
-  background-color: #444; }
+  background-color: #555; }
 
 /*---Main---*/
 main {
