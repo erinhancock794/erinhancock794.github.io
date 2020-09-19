@@ -408,11 +408,10 @@ body {
 
 header {
   background-color: #448dec;
-  padding: 1rem 10%;
+  padding: 0.5rem 2%;
   display: flex; }
 
 header div {
-  padding: 5% 5% 0px 5%;
   align-self: flex-end; }
 
 header img {
@@ -420,22 +419,25 @@ header img {
 
 header h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 600; }
 
 header h2 {
-  font-size: 1rem;
-  color: red; }
+  font-size: 1rem; }
 
 nav {
   background-color: #111; }
 
 nav ul {
   margin: 0;
-  padding-right: 10%; }
+  padding-right: 2%; }
 
 nav li {
-  list-style-type: none; }
+  list-style-type: none;
+  float: left;
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 2%; }
 
 nav li.active {
   background-color: #333; }
@@ -451,16 +453,10 @@ nav a {
 nav a:hover {
   background-color: #444; }
 
-figure.hero img {
-  width: 100vw;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  display: block; }
-
 /*---Main---*/
 main {
   display: block;
-  padding: 1rem 10%; }
+  padding: 1rem 2%; }
 
 main h1 {
   color: #448dec; }
@@ -474,7 +470,7 @@ div.parent figure {
   margin: 0; }
 
 div.parent figure img {
-  width: 100%;
+  width: 95%;
   height: auto; }
 
 footer {
@@ -482,7 +478,7 @@ footer {
   display: block;
   background-color: #eee;
   text-align: center;
-  padding: 1rem 10%; }
+  padding: 1rem 2%; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -492,8 +488,9 @@ footer {
 
 @media only screen and (min-width: 560px) {
   nav li {
-    width: 25%;
-    float: left; }
+    max-width: 15%;
+    float: left;
+    padding-right: 1%; }
 
   main figure {
     float: center;
@@ -502,15 +499,23 @@ footer {
     margin-left: 2%;
     padding-bottom: .5rem; }
 
+  header img {
+    max-width: 10%; }
+
   header h2 {
     display: block;
     margin: 0;
     font-size: 1rem;
     font-weight: 300; }
 
-  main figure.photo figcaption {
-    text-align: center;
-    font-size: .8rem; }
+  div.parent figure {
+    margin-right: 3%;
+    flex-basis: 30%; }
+
+  div.parent figure img {
+    width: 100%;
+    height: auto;
+    margin: 2px; }
 
   /* end of media query */ }
 @media only screen and (min-width: 1028px) {
@@ -519,19 +524,23 @@ footer {
     margin: auto; }
 
   nav ul {
-    padding-left: 10%; }
+    padding-left: 2%; }
 
   nav li {
-    width: auto; }
+    max-width: 15%; }
 
   nav a {
-    padding: .5rem 1rem; }
+    padding: .5rem .2rem; }
 
   main figure {
-    width: 31%; }
+    width: 30%; }
 
   header img {
     width: 10%; }
+
+  div.parent figure {
+    margin-right: 3%;
+    flex-basis: 22%; }
 
   /* end of media query */ }
 

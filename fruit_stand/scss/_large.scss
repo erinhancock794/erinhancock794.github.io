@@ -7,13 +7,20 @@
     
     
     nav ul {padding-left: $gutter;}
-    nav li {width:auto;}
-    nav a {padding: .5rem 1rem;}
+    nav li {max-width: 15%;}
+    nav a {padding: .5rem .2rem;}
     
-    main figure { width: 31%;}
+    main figure { width: 30%;}
 
     header img{
         width: 10%;
     }
+
+
+    div.parent figure {
+        margin-right: 3%;
+        flex-basis: 22%;
+    }
+
     
  /* end of media query */

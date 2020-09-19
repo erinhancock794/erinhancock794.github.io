@@ -13,12 +13,12 @@ body {
 
 header {
     background-color: $primaryColor;
-    padding: 1rem $gutter;
+    padding: .5rem $gutter;
     display: flex;
     
 }
 header div{
-padding: 5% 5% 0px 5%;
+// padding: 5% 5% 0px 5%;
 align-self: flex-end;
 }
 
@@ -27,21 +27,26 @@ header img{
 }
 header h1 {
 	margin: 0; 
-    font-size: 1.5rem;
+    font-size: 3rem;
     font-weight: $heavyWeight;
 }
 header h2{
     font-size: 1rem;
-    color: red;
     
 }
 
 nav {
     background-color: #111;
 }
-nav ul{margin:0; padding-right: $gutter;}
+nav ul{margin:0; 
+    padding-right: $gutter;
+}
 nav li {
     list-style-type: none;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 2%;
 
 }
 nav li.active {background-color: #333}
@@ -54,15 +59,11 @@ nav a {
 }
 nav a:hover {background-color: #444;}
 
-figure.hero img {
-    width: 100vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    display: block;
-}
 
 /*---Main---*/
-main{display: block; padding: 1rem $gutter;}
+main{display: block;
+     padding: 1rem $gutter;
+    }
 main h1 {color: $primaryColor;}
 
 div.parent{
@@ -74,7 +75,7 @@ div.parent figure {
     margin: 0;
 }
 div.parent figure img{
-    width: 100%;
+    width: 95%;
     height: auto;
 }
 
