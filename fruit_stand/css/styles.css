@@ -409,17 +409,16 @@ body {
 header {
   background-color: #448dec;
   padding: 0.5rem 2%;
-  display: flex; }
-
-header div {
-  align-self: flex-end; }
+  display: flex;
+  align-items: flex-end; }
 
 header img {
-  width: 20%; }
+  width: 60px;
+  height: 60px; }
 
 header h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600; }
 
 header h2 {

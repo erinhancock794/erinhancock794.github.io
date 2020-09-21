@@ -15,19 +15,21 @@ header {
     background-color: $primaryColor;
     padding: .5rem $gutter;
     display: flex;
+    align-items: flex-end;
     
 }
 header div{
 // padding: 5% 5% 0px 5%;
-align-self: flex-end;
+// align-self: flex-end;
 }
 
 header img{
-    width: 20%;
+    width: 60px;
+    height: 60px;
 }
 header h1 {
 	margin: 0; 
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: $heavyWeight;
 }
 header h2{
