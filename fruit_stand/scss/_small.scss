@@ -26,10 +26,11 @@ header div{
 header img{
     width: 60px;
     height: 60px;
+    margin-right: 2%;
 }
 header h1 {
 	margin: 0; 
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: $heavyWeight;
 }
 header h2{
@@ -40,10 +41,14 @@ header h2{
 nav {
     background-color: darken($menuColor, 20%);
 }
-nav ul{margin:0; 
+nav ul{
+    margin:0; 
+    padding-left: 3%;
     padding-right: $gutter;
 }
 nav li {
+    padding: 0;
+    font-size: .8rem;
     list-style-type: none;
     float: left;
     display: flex;
