@@ -1,0 +1,26 @@
+
+    header, nav, main {
+        max-width: 1200px;
+        margin:auto;
+    }
+    
+    
+    
+    nav ul {padding-left: $gutter;}
+    nav li {max-width: 15%;}
+    nav a {padding: .5rem .2rem;}
+    
+    main figure { width: 30%;}
+
+    header img{
+        max-width: 20%;
+    }
+
+
+    div.parent figure {
+        margin-right: 3%;
+        flex-basis: 22%;
+    }
+
+    
+ /* end of media query */

@@ -1,0 +1,107 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    font-size: 16px;
+}
+
+header {
+    background-color: $primaryColor;
+    padding: .5rem $gutter;
+    display: flex;
+    align-items: flex-end;
+    
+}
+header div{
+// padding: 5% 5% 0px 5%;
+// align-self: flex-end;
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+    margin-right: 2%;
+}
+header h1 {
+	margin: 0; 
+    font-size: 1.5rem;
+    font-weight: $heavyWeight;
+}
+header h2{
+    font-size: 1rem;
+    
+}
+
+nav {
+    background-color: darken($menuColor, 20%);
+}
+nav ul{
+    margin:0; 
+    padding-left: 3%;
+    padding-right: $gutter;
+}
+nav li {
+    padding: 0;
+    font-size: .8rem;
+    list-style-type: none;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 2%;
+
+}
+nav li.active {background-color: lighten($menuColor, 10%)}
+nav a {
+    display: block;
+    padding: .8rem 0; /*44px min*/
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: $menuColor};
+
+
+/*---Main---*/
+main{display: block;
+     padding: 1rem $gutter;
+    }
+main h1 {color: $primaryColor;}
+
+div.parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.parent figure {
+    flex-basis: 50%;
+    margin: 0;
+}
+div.parent figure img{
+    width: 95%;
+    height: auto;
+}
+
+
+
+
+footer {
+    width: 100vw;
+    display: block;
+    background-color: $footerColor;
+    text-align: center;
+    padding: 1rem $gutter;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
