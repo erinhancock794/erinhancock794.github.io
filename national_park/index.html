@@ -6,6 +6,9 @@
   <meta name="description" content="Fruit Stand Site">
   <meta name="author" content="Erin Hancock">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <title>National Park</title>
 
   <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
@@ -21,7 +24,6 @@
 
 <body>
   <header>
-    <img src="images/appleicon.png" alt="logo">
     <div class="title">
       <h1>National Park</h1>
       <h2>Adventure of a Lifetime</h2>
@@ -31,11 +33,13 @@
 
   <nav class="clearfix">
     <ul>
-      <li><a href="#">Visits |</a></li>
-
-      <li><a href="#">Sites |</a></li>
+      <li><a href="#">Visits</a></li>
+      <li><a class = "navdivide">|</a></li>
+      <li><a href="#">Sites</a></li>
+      <li><a class = "navdivide">|</a></li>
       <li><a href="#">Donate</a></li>
-      <li class="active"><a href="index.html">Events |</a></li>
+      <li><a class = "navdivide">|</a></li>
+      <li class="active"><a href="index.html">Events</a></li>
 
     </ul>
   </nav>
@@ -49,6 +53,7 @@
     <h1>Events</h1>
     <div class="parent">
       <h2>Visit a Bear</h2>
+      <img class="animate__animated animate__bounce" id="bear" src='/images/bear_icon.png'>
       <p>Globally enable intuitive users with turnkey strategic theme areas. Synergistically impact multimedia based
         methodologies with functional niches. Collaboratively foster future-proof process improvements and emerging
         web-readiness. Dramatically disintermediate efficient alignments after effective "outside the box" thinking.

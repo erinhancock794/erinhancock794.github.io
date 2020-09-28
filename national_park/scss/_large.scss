@@ -1,11 +1,15 @@
 
-    header, nav, main {
+    header, main {
         max-width: 960px;
         margin:auto;
 
     }
-    
-    header{
+    nav {
+        background-color: blue;
+        width: 100vw;
+        margin: auto;
+        padding: 2px 0 2px 140px;
+
     }
     
     nav ul {padding-left: $gutter;}

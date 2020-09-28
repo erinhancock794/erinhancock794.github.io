@@ -39,6 +39,16 @@ header h2{
 
 nav {
     background-color: darken($menuColor, 20%);
+    width: 100vw;
+    display: block;
+
+}
+
+.navdivide {
+    color: red;
+}
+.navdivide:hover {
+    display:none;
 }
 nav ul{
     margin:0; 
@@ -52,7 +62,7 @@ nav li {
     float: left;
     display: flex;
     justify-content: space-evenly;
-    padding-right: 2%;
+    padding-right: 1%;
 
 }
 nav li.active {background-color: lighten($menuColor, 10%)}
@@ -73,18 +83,9 @@ main{display: block;
     }
 main h1 {color: $primaryColor;}
 
-div.parent{
-    display: flex;
-    flex-wrap: wrap;
-}
-div.parent figure {
-    flex-basis: 50%;
-    margin: 0;
-}
-div.parent figure img{
-    width: 95%;
-    height: auto;
-}
+.animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
 
 
 
