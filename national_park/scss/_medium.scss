@@ -1,12 +1,10 @@
 
-    nav li {
-        max-width: 15%; 
-        float: left;
-        padding-right: 1%;
-
+    nav {
+        width: 100vw;
+        margin: auto;
+        padding: 2px 0 2px 0px;
     }
-    
-    
+
 main figure {
         float: center; 
         size: 20%;
@@ -14,9 +12,6 @@ main figure {
         margin-left: 2%;
         padding-bottom: .5rem;
     }
-header img{
-    max-width: 10%;
-}
 
  header h2{
      display: block;
@@ -30,8 +25,7 @@ header img{
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    // flex-wrap: wrap;
-    // justify-content: flex-wrap;
+
 }
 .text{
     float: left;

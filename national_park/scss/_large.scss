@@ -1,32 +1,18 @@
 
-    header, main {
+    header, main, nav ul{
         max-width: 960px;
         margin:auto;
 
     }
-    nav {
-        background-color: blue;
-        width: 100vw;
-        margin: auto;
-        padding: 2px 0 2px 140px;
+    
+    nav ul {
+        padding-left: $gutter;
+        display: block;
 
     }
-    
-    nav ul {padding-left: $gutter;}
-    nav li {max-width: 15%;}
+
     nav a {padding: .5rem .2rem;}
     
-    main figure { width: 30%;}
-
-    header img{
-        max-width: 20%;
-    }
-
-
-    div.parent figure {
-        margin-right: 3%;
-        flex-basis: 22%;
-    }
 
     
  /* end of media query */
