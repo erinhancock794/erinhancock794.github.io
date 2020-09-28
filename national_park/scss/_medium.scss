@@ -26,14 +26,14 @@ header img{
     }
     
 
-    div.parent figure {
-        margin-right: 3%;
-        flex-basis: 30%;
-    }
-
-    div.parent figure img{
-        width: 100%;
-        height: auto;
-        margin: 2px;
-    }
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    // flex-wrap: wrap;
+    // justify-content: flex-wrap;
+}
+.text{
+    float: left;
+}
  /* end of media query */
