@@ -1,10 +1,12 @@
 
     header, nav, main {
-        max-width: 1200px;
+        max-width: 960px;
         margin:auto;
+
     }
     
-    
+    header{
+    }
     
     nav ul {padding-left: $gutter;}
     nav li {max-width: 15%;}

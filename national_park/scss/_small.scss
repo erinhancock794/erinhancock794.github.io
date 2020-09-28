@@ -13,15 +13,14 @@ body {
 
 header {
     background-color: $primaryColor;
+    background-color: orange;
+
     padding: .5rem $gutter;
     display: flex;
     align-items: flex-end;
     
 }
-header div{
-// padding: 5% 5% 0px 5%;
-// align-self: flex-end;
-}
+
 
 header img{
     width: 60px;
