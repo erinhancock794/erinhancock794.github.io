@@ -517,7 +517,7 @@ footer {
     float: left; }
 
   header {
-    background-image: url("/images/mediumHeader2.jpg"); }
+    background-image: url("../../national_park/images/mediumHeader2.jpg"); }
 
   /* end of media query */ }
 @media only screen and (min-width: 1028px) {
