@@ -498,8 +498,7 @@ footer {
 
 @media only screen and (min-width: 560px) {
   header {
-    background-image: url("/images/mediumHeader.jpg");
-    background-repeat: none; }
+    background-image: url("/images/mediumHeader.jpg"); }
 
   nav {
     width: 100vw;
