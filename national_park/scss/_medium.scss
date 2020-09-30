@@ -1,7 +1,5 @@
 
-    header {
-        background-image: url('/images/mediumHeader2.jpg');  
-    }
+
     
     nav {
         width: 100vw;
@@ -26,5 +24,9 @@
 }
 .text{
     float: left;
+}
+
+header {
+    background-image: url('/images/mediumHeader2.jpg');  
 }
  /* end of media query */

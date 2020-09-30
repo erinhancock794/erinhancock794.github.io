@@ -497,9 +497,6 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  header {
-    background-image: url("/images/mediumHeader2.jpg"); }
-
   nav {
     width: 100vw;
     margin: auto;
@@ -518,6 +515,9 @@ footer {
 
   .text {
     float: left; }
+
+  header {
+    background-image: url("/images/mediumHeader2.jpg"); }
 
   /* end of media query */ }
 @media only screen and (min-width: 1028px) {
