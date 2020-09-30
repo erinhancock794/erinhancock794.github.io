@@ -1,9 +1,19 @@
 
+
     header, main, nav ul{
-        max-width: 960px;
+        max-width: 1024px;
         margin:auto;
 
     }
+    .headerWrapper {
+        background-image: url('/images/images/headerRepeat.png');  
+    }
+
+    header {
+        background-image: url('/images/images/headerLarge.jpg');
+        // max-width: 1024px;
+    }
+
     
     nav ul {
         padding-left: $gutter;

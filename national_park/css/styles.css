@@ -407,11 +407,16 @@ body {
   font-size: 16px; }
 
 header {
-  background-color: #448dec;
-  background-color: orange;
+  background-image: url("/images/headerOne-assets/smallHeader.jpg");
   padding: 0.5rem 2%;
   display: flex;
-  align-items: flex-end; }
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 180px; }
+
+.headerText {
+  position: relative;
+  color: white; }
 
 nav ul {
   display: flex;
@@ -492,6 +497,10 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
+  header {
+    background-image: url("/images/headerOne-assets/mediumHeader.jpg");
+    background-repeat: none; }
+
   nav {
     width: 100vw;
     margin: auto;
@@ -521,8 +530,14 @@ footer {
   /* end of media query */ }
 @media only screen and (min-width: 1028px) {
   header, main, nav ul {
-    max-width: 960px;
+    max-width: 1024px;
     margin: auto; }
+
+  .headerWrapper {
+    background-image: url("/images/images/headerRepeat.png"); }
+
+  header {
+    background-image: url("/images/images/headerLarge.jpg"); }
 
   nav ul {
     padding-left: 2%;

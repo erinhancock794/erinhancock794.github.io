@@ -12,13 +12,18 @@ body {
 }
 
 header {
-    background-color: $primaryColor;
-    background-color: orange;
-
+    background-image: url('/images/headerOne-assets/smallHeader.jpg');
     padding: .5rem $gutter;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 180px;
     
+}
+.headerText {
+    position: relative;
+    color: white;
+    // opacity: none;
 }
 nav ul{
     display: flex;
