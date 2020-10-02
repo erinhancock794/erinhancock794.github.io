@@ -1,11 +1,21 @@
 
 
+    nav li {
+        float: left;
+        padding: 0 2% 0 2%;
+        border-style: none solid none none;
     
-    nav {
-        width: 100vw;
-        margin: auto;
-        padding: 2px 0 2px 0px;
     }
+
+    
+    nav ul {
+        padding-left: $gutter;
+        display: block;
+
+    }
+
+    nav a {padding: .5rem .2rem;}
+    
 
 
  header h2{

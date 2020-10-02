@@ -418,10 +418,6 @@ header {
   position: relative;
   color: white; }
 
-nav ul {
-  display: flex;
-  justify-content: space-evenly; }
-
 header h1 {
   margin: 0;
   font-size: 1.5rem;
@@ -432,41 +428,32 @@ header h2 {
 
 nav {
   background-color: #222222;
-  width: 100vw;
-  display: block; }
-
-.navdivide {
-  color: red; }
-
-.navdivide:hover {
-  display: none; }
+  width: 100vw; }
 
 nav ul {
-  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
   padding-left: 3%;
   padding-right: 2%; }
 
 nav li {
-  padding: 0;
   font-size: .8rem;
   list-style-type: none;
-  float: left;
-  display: flex;
-  justify-content: space-evenly;
-  padding-right: 1%; }
+  align-content: space-evenly;
+  margin: auto;
+  padding: 0 1% 0 1%; }
 
 nav li.active {
   background-color: #6f6f6f; }
 
 nav a {
   display: block;
-  padding: .8rem 0;
-  /*44px min*/
+  padding: .5rem .2rem;
   color: #eee;
-  text-align: center;
   text-decoration: none; }
 
-nav a:hover {
+nav li:hover {
   background-color: #555; }
 
 /*---Main---*/
@@ -497,10 +484,17 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  nav {
-    width: 100vw;
-    margin: auto;
-    padding: 2px 0 2px 0px; }
+  nav li {
+    float: left;
+    padding: 0 2% 0 2%;
+    border-style: none solid none none; }
+
+  nav ul {
+    padding-left: 2%;
+    display: block; }
+
+  nav a {
+    padding: .5rem .2rem; }
 
   header h2 {
     display: block;
@@ -530,13 +524,6 @@ footer {
 
   header {
     background-image: url("/images/headerLarge.jpg"); }
-
-  nav ul {
-    padding-left: 2%;
-    display: block; }
-
-  nav a {
-    padding: .5rem .2rem; }
 
   /* end of media query */ }
 
