@@ -22,7 +22,15 @@
 
 <body>
   <div class="headerWrapper">
-  <header>
+  <header class="clearfix">
+    <figure class="logo">
+      <img src="images/logo_icon-assets/logo0.png" alt="logo" 
+      
+      srcset="images/logo_icon-assets/logo1.png 1x, 
+      images/logo_icon-assets/logo2.png 2x, 
+      images/logo_icon-assets/logo3.png 3x"
+      >
+  </figure>
     <div class = "headerText">
       <h1>Restaurant</h1>
       <h2>Affordable Eats</h2>
@@ -47,11 +55,22 @@
   <!--Main Content-->
   <div class="mainWrapper">
   <main>
+    <picture class="hero">
+      <source media="(max-width: 400px)" srcset="images/founder200.jpg">
+      <source media="(max-width: 700px)" srcset="images/founder350.jpg">
+      <img src="images/hero-assets/hero450.jpg" alt="The default if no other match is found" size="100vw"
+      srcset="images/hero-assets/hero450.jpg 450w, 
+      images/hero-assets/hero600.jpg 600w,
+      images/hero-assets/hero750.jpg 750w,
+      images/hero-assets/hero900.jpg 900w,
+      images/hero-assets/hero1050.jpg 1050w",>
+      <div>Restaurant</div>
+</picture> 
+  
+  
 
-    <h1>Our Founder</h1>
+    <h2>Our Founder</h2>
     <div class="parent">
-        <img src="images/pexels-kun-fotografi-1230302.jpg">
-
           <p>Nec, vut eu mid dictumst enim rhoncus non ac enim scelerisque amet dictumst porttitor, ultricies nisi pulvinar, dolor diam amet! Augue, etiam amet duis pulvinar nunc, porta cum ac ultrices, lundium mauris et! Tortor. Vel? Diam. Purus nascetur augue platea ac! Habitasse dapibus lorem cursus a lorem, in dignissim et, elementum, nisi et montes magna sed tortor, dapibus pellentesque etiam mattis adipiscing, et proin in, magna pid, mid Montes aenean proin mus hac porta rhoncus pid? Nec, vut eu mid dictumst enim rhoncus non ac enim scelerisque amet dictumst porttitor, ultricies nisi pulvinar, dolor diam amet! Augue, etiam amet duis pulvinar nunc, porta cum ac ultrices, lundium mauris et! Tortor. Vel? Diam. Purus nascetur augue platea ac! Habitasse dapibus lorem cursus a lorem, in dignissim et, elementum, nisi et montes magna sed tortor, dapibus pellentesque etiam mattis adipiscing, et proin in, magna pid, mid Montes aenean proin mus hac porta rhoncus pid?Nec, vut eu mid dictumst enim rhoncus non ac enim scelerisque amet dictumst porttitor, ultricies nisi pulvinar, dolor diam amet! Augue, etiam amet duis pulvinar nunc, porta cum ac ultrices, lundium mauris et! Tortor. Vel? Diam. Purus nascetur augue platea ac! Habitasse dapibus lorem cursus a lorem, in dignissim et, elementum, nisi et montes magna sed tortor, dapibus pellentesque etiam mattis adipiscing, et proin in, magna pid, mid Montes aenean proin mus hac porta rhoncus pid?Nec, vut eu mid dictumst enim rhoncus non ac enim scelerisque amet dictumst porttitor, ultricies nisi pulvinar, dolor diam amet! Augue, etiam amet duis pulvinar nunc, porta cum ac ultrices, lundium mauris et! Tortor. Vel? Diam. Purus nascetur augue platea ac! Habitasse dapibus lorem cursus a lorem, in dignissim et, elementum, nisi et montes magna sed tortor, dapibus pellentesque etiam mattis adipiscing, et proin in </p>
       </div>
     </div>

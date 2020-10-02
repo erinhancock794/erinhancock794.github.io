@@ -12,30 +12,29 @@ body {
 }
 
 header {
-    background-image: url('../../national_park/images/smallHeader2.jpg');
+    background-color: rgb(54, 74, 85);
     padding: .5rem $gutter;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 180px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    // height: 180px;
     
 }
-.headerText {
-    position: relative;
-    color: white;
-}
-
-
-
 
 header h1 {
+    color: white;
 	margin: 0; 
     font-size: 1.5rem;
     font-weight: $heavyWeight;
 }
 header h2{
+    color: white;
     font-size: 1rem;
     
+}
+header figure.logo{
+    float: left;
+    margin: 0 2% 0 0;
 }
 
 nav {

@@ -407,24 +407,22 @@ body {
   font-size: 16px; }
 
 header {
-  background-image: url("../../national_park/images/smallHeader2.jpg");
-  padding: 0.5rem 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 180px; }
-
-.headerText {
-  position: relative;
-  color: white; }
+  background-color: #364a55;
+  padding: 0.5rem 2%; }
 
 header h1 {
+  color: white;
   margin: 0;
   font-size: 1.5rem;
   font-weight: 600; }
 
 header h2 {
+  color: white;
   font-size: 1rem; }
+
+header figure.logo {
+  float: left;
+  margin: 0 2% 0 0; }
 
 nav {
   background-color: #222222;
@@ -484,24 +482,6 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  nav li {
-    float: left;
-    padding: 0 2% 0 2%;
-    border-style: none solid none none; }
-
-  nav ul {
-    padding-left: 2%;
-    display: block; }
-
-  nav a {
-    padding: .5rem .2rem; }
-
-  header h2 {
-    display: block;
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 300; }
-
   .info {
     width: 100%;
     display: flex;
@@ -518,12 +498,6 @@ footer {
   header, main, nav ul {
     max-width: 1024px;
     margin: auto; }
-
-  .headerWrapper {
-    background-image: url("/images/headerRepeat.png"); }
-
-  header {
-    background-image: url("/images/headerLarge.jpg"); }
 
   /* end of media query */ }
 
