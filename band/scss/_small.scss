@@ -6,12 +6,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /* body rules */
 body {
-    font-family: $fontFamily;
+    font-family: $fontText;
     font-weight: $regularWeight;
     font-size: 16px;
 }
 
 header {
+    font-family: $fontFamily;
     background-color: $primaryColor;
     padding: .5rem $gutter;
     // display: flex;
@@ -22,6 +23,7 @@ header {
 }
 
 header h1 {
+    
     color: white;
 	margin: 0; 
     font-size: 1.5rem;
@@ -52,6 +54,8 @@ nav ul{
     padding-right: $gutter;
 }
 nav li {
+    font-family: $fontFamily;
+
     font-size: .8rem;
     list-style-type: none;
     align-content: space-evenly;
@@ -75,45 +79,56 @@ nav li:hover {
 
 /*---Main---*/
 .parent{
-    padding: 1%;
+    display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	row-gap: .5em;
+	column-gap: 1px; 
+	align-content: center;
 }
 
 
 #octogon {
-    float: left;
-    shape-outside: circle();
-    padding: 10px;
-    margin-bottom: 20px;
+    float: right;
+    shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    margin-left: 5px;
+    // margin-bottom: 20px;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 #triangle{
-    margin-bottom: 20px;
+    float: right;
+    // margin-bottom: 20px;
+    shape-outside: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }  
 #circle{
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    float: right;
     clip-path: circle(50% at 50% 50%);
     shape-outside: circle(50%);
 }
 #rabbet{
-    margin-bottom: 20px;
+    margin-left: 5px;
+    shape-outside: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    float: right;
     clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
 }
 .clipped{
-    max-width: 15%;
+    max-width: 100px;
 }
-
+.members{
+    padding: 20px;
+}
 main h2 {
+    font-family: $fontFamily;
+
     color: $primaryColor;
     padding: 1%;
 }
-
-.parent {
- 
-    // grid-template-columns: repeat(3, 12px);
-// grid-template-rows: repeat(3, auto);
-// align-items: stretch;
+h3{
+    font-family: $fontFamily;
 }
+
 
 
 footer {
