@@ -455,18 +455,11 @@ nav li:hover {
   background-color: #555; }
 
 /*---Main---*/
-main {
-  display: block;
-  padding: 1rem 2%; }
+main h2 {
+  color: #364a55; }
 
-main h1 {
-  color: #448dec; }
-
-.animate__animated.animate__bounce {
-  --animate-duration: 2s; }
-
-.info img {
-  height: 200px; }
+.hero img {
+  max-width: 1200px; }
 
 footer {
   width: 100vw;
@@ -496,7 +489,7 @@ footer {
   /* end of media query */ }
 @media only screen and (min-width: 1028px) {
   header, main, nav ul {
-    max-width: 1024px;
+    max-width: 1200px;
     margin: auto; }
 
   /* end of media query */ }
