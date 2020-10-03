@@ -74,21 +74,35 @@ nav li:hover {
 
 
 /*---Main---*/
-// .mainWrapper{
-// max-width: 1050px;
-//     }
-main h2 {color: $primaryColor;}
+.parent{
+    padding: 1%;
+}
+// 
+main h2 {
+    color: $primaryColor;
+    padding: 1%;
+}
 
 .hero img{
 max-width: 1200px;
 }
+picture div{
+    display:block;
+}
 
+.founder img{
+    width: 50%;
+    float: right;
+    position: relative;
+ }
 footer {
     width: 100vw;
-    display: block;
+    // display: block;
+    position: absolute;
     background-color: $footerColor;
     text-align: center;
     padding: 1rem $gutter;
+    overflow: hidden;
 }
 
 

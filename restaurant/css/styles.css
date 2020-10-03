@@ -455,18 +455,31 @@ nav li:hover {
   background-color: #555; }
 
 /*---Main---*/
+.parent {
+  padding: 1%; }
+
 main h2 {
-  color: #364a55; }
+  color: #364a55;
+  padding: 1%; }
 
 .hero img {
   max-width: 1200px; }
 
+picture div {
+  display: block; }
+
+.founder img {
+  width: 50%;
+  float: right;
+  position: relative; }
+
 footer {
   width: 100vw;
-  display: block;
+  position: absolute;
   background-color: #eee;
   text-align: center;
-  padding: 1rem 2%; }
+  padding: 1rem 2%;
+  overflow: hidden; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -491,6 +504,24 @@ footer {
   header, main, nav ul {
     max-width: 1200px;
     margin: auto; }
+
+  nav li {
+    float: left;
+    padding: 0 2% 0 2%;
+    border-style: none solid none none; }
+
+  nav ul {
+    padding-left: 2%;
+    display: block; }
+
+  .founder img {
+    max-height: 500px;
+    width: auto; }
+
+  .parent {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2%; }
 
   /* end of media query */ }
 
