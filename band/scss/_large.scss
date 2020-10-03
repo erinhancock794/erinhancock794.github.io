@@ -1,0 +1,34 @@
+
+
+    header, main, nav ul {
+        max-width: 1200px;
+        margin:auto;
+
+    }
+
+    nav li {
+        float: left;
+        padding: 0 2% 0 2%;
+        border-style: none solid none none;
+    
+    }
+
+    
+    nav ul {
+        padding-left: $gutter;
+        display: block;
+
+    }
+.founder img{
+    max-height: 500px;
+    width: auto;
+}
+.parent{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2%;
+}
+    
+
+    
+ /* end of media query */
