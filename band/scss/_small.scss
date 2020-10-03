@@ -131,7 +131,26 @@ h3{
 
 
 
-footer {
+
+
+
+
+section.gallery figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    /* 👆 image height / width * 100% */
+    position: relative;
+    margin: 0;
+  }
+  section.gallery figure img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+
+
+  footer {
     width: 100vw;
     // display: block;
     position: absolute;
@@ -139,8 +158,8 @@ footer {
     text-align: center;
     padding: 1rem $gutter;
     overflow: hidden;
+    margin-top: 100px;
 }
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
