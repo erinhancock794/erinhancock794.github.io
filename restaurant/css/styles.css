@@ -425,8 +425,7 @@ header figure.logo {
   margin: 0 2% 0 0; }
 
 nav {
-  background-color: #222222;
-  width: 100vw; }
+  background-color: #222222; }
 
 nav ul {
   display: flex;
