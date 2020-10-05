@@ -75,7 +75,7 @@ nav li:hover {
 
 /*---Main---*/
 .parent{
-    padding: 1%;
+    // padding: 1%;
 }
 // 
 main h2 {
@@ -83,11 +83,12 @@ main h2 {
     padding: 1%;
 }
 
-.hero img{
-max-width: 1200px;
-}
-picture div{
+picture.hero img{
+width: 100%}
+picture.hero{
     display:block;
+    // width: 96%;
+    // margin: 0 2%;
 }
 
 .founder img{
