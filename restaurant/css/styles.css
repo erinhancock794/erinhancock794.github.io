@@ -454,6 +454,9 @@ nav li:hover {
   background-color: #555; }
 
 /*---Main---*/
+.parent, #tag {
+  padding: 0 2% 0 2%; }
+
 main h2 {
   color: #364a55;
   padding: 1%; }
@@ -467,7 +470,8 @@ picture.hero {
 .founder img {
   width: 50%;
   float: right;
-  position: relative; }
+  position: relative;
+  padding-left: 2%; }
 
 footer {
   width: 100vw;

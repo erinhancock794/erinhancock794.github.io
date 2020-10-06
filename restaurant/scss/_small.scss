@@ -74,10 +74,10 @@ nav li:hover {
 
 
 /*---Main---*/
-.parent{
-    // padding: 1%;
+.parent, #tag{
+    padding: 0 2% 0 2%;
 }
-// 
+
 main h2 {
     color: $primaryColor;
     padding: 1%;
@@ -95,6 +95,7 @@ picture.hero{
     width: 50%;
     float: right;
     position: relative;
+    padding-left: 2%;
  }
 footer {
     width: 100vw;
