@@ -1,0 +1,169 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: $fontText;
+    font-weight: $regularWeight;
+    font-size: 16px;
+}
+
+header {
+    font-family: $fontFamily;
+    background-color: $primaryColor;
+    padding: .5rem $gutter;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    // height: 180px;
+    
+}
+
+header h1 {
+    
+    color: white;
+	margin: 0; 
+    font-size: 1.5rem;
+    font-weight: $heavyWeight;
+}
+header h2{
+    color: white;
+    font-size: 1rem;
+    
+}
+header figure.logo{
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+nav {
+    background-color: darken($menuColor, 20%);
+    // width: 100vw;
+    // display: block;
+
+}
+
+nav ul{
+    display:flex;
+    justify-content: flex-start;
+    margin:auto; 
+    padding-left: 3%;
+    padding-right: $gutter;
+}
+nav li {
+    font-family: $fontFamily;
+
+    font-size: .8rem;
+    list-style-type: none;
+    align-content: space-evenly;
+    margin: auto;
+    padding: 0 1% 0 1%;
+    
+
+}
+nav li.active {background-color: lighten($menuColor, 10%)}
+nav a {
+    display: block;
+    padding: .5rem .2rem;
+    color: #eee;
+    text-decoration: none;
+}
+nav li:hover {
+    background-color: $menuColor};
+
+
+
+
+/*---Main---*/
+.parent{
+    display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-auto-rows: minmax(100px, auto);
+	row-gap: .5em;
+	column-gap: 1px; 
+	align-content: center;
+}
+
+
+#octogon {
+    float: right;
+    shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    margin-left: 5px;
+    // margin-bottom: 20px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+#triangle{
+    float: right;
+    // margin-bottom: 20px;
+    shape-outside: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}  
+#circle{
+    // margin-bottom: 20px;
+    float: right;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50%);
+}
+#rabbet{
+    margin-left: 5px;
+    shape-outside: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    float: right;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+.clipped{
+    max-width: 100px;
+}
+.members{
+    padding: 20px;
+}
+main h2 {
+    font-family: $fontFamily;
+
+    color: $primaryColor;
+    padding: 1%;
+}
+h3{
+    font-family: $fontFamily;
+}
+
+
+
+
+
+
+
+section.gallery figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    /* 👆 image height / width * 100% */
+    position: relative;
+    margin: 0;
+  }
+  section.gallery figure img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+
+
+  footer {
+    width: 100vw;
+    // display: block;
+    position: absolute;
+    background-color: $footerColor;
+    text-align: center;
+    padding: 1rem $gutter;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

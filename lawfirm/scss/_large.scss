@@ -1,0 +1,28 @@
+
+
+    header, main, nav ul {
+        max-width: 1200px;
+        margin:auto;
+
+    }
+
+    nav li {
+        float: left;
+        padding: 0 2% 0 2%;
+        border-style: none solid none none;
+    
+    }
+
+    
+    nav ul {
+        padding-left: $gutter;
+        display: block;
+
+    }
+    .parent{
+        grid-template-columns: repeat(4, .3fr);
+    }
+    
+
+    
+ /* end of media query */
