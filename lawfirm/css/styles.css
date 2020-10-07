@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -408,9 +407,11 @@ body {
   font-size: 16px; }
 
 header {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Quicksand";
   background-color: #364a55;
-  padding: 0.5rem 2%; }
+  padding: 0.5rem 2vw;
+  display: grid;
+  grid-template-columns: 400px auto; }
 
 header h1 {
   color: white;
@@ -434,10 +435,10 @@ nav ul {
   justify-content: flex-start;
   margin: auto;
   padding-left: 3%;
-  padding-right: 2%; }
+  padding-right: 2vw; }
 
 nav li {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Quicksand";
   font-size: .8rem;
   list-style-type: none;
   align-content: space-evenly;
@@ -457,69 +458,131 @@ nav li:hover {
   background-color: #555; }
 
 /*---Main---*/
-.parent {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  row-gap: .5em;
-  column-gap: 1px;
-  align-content: center; }
+/*---COLUMNS----*/
+div.attorneys {
+  display: flex;
+  flex-wrap: wrap; }
 
-#octogon {
-  float: right;
-  shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  margin-left: 5px;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+.small-1 {
+  flex-basis: 8.3333333333%; }
 
-#triangle {
-  float: right;
-  shape-outside: polygon(50% 0%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+.backgroundColor {
+  background-color: lightblue; }
 
-#circle {
-  float: right;
-  clip-path: circle(50% at 50% 50%);
-  shape-outside: circle(50%); }
+.column {
+  padding: 0 2vw; }
 
-#rabbet {
-  margin-left: 5px;
-  shape-outside: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
-  float: right;
-  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%); }
+.small-2 {
+  flex-basis: 16.6666666667%; }
 
-.clipped {
-  max-width: 100px; }
+.backgroundColor {
+  background-color: lightblue; }
 
-.members {
-  padding: 20px; }
+.column {
+  padding: 0 2vw; }
 
-main h2 {
-  font-family: "Permanent Marker", cursive;
-  color: #364a55;
-  padding: 1%; }
+.small-3 {
+  flex-basis: 25%; }
 
-h3 {
-  font-family: "Permanent Marker", cursive; }
+.backgroundColor {
+  background-color: lightblue; }
 
-section.gallery figure {
-  width: 100%;
-  height: 0;
-  padding-bottom: 60%;
-  /* 👆 image height / width * 100% */
-  position: relative;
-  margin: 0; }
+.column {
+  padding: 0 2vw; }
 
-section.gallery figure img {
-  width: 100%;
-  height: auto;
-  position: absolute; }
+.small-4 {
+  flex-basis: 33.3333333333%; }
+
+.backgroundColor {
+  background-color: lightblue; }
+
+.column {
+  padding: 0 2vw; }
+
+.small-5 {
+  flex-basis: 41.6666666667%; }
+
+.backgroundColor {
+  background-color: lightblue; }
+
+.column {
+  padding: 0 2vw; }
+
+.small-6 {
+  flex-basis: 50%; }
+
+.backgroundColor {
+  background-color: lightblue; }
+
+.column {
+  padding: 0 2vw; }
+
+.small-7 {
+  flex-basis: 58.3333333333%; }
+
+.backgroundColor {
+  background-color: lightblue; }
+
+.column {
+  padding: 0 2vw; }
+
+.small-8 {
+  flex-basis: 66.6666666667%; }
+
+.backgroundColor {
+  background-color: lightblue; }
+
+.column {
+  padding: 0 2vw; }
+
+.small-9 {
+  flex-basis: 75%; }
+
+.backgroundColor {
+  background-color: lightblue; }
+
+.column {
+  padding: 0 2vw; }
+
+.small-10 {
+  flex-basis: 83.3333333333%; }
+
+.backgroundColor {
+  background-color: lightblue; }
+
+.column {
+  padding: 0 2vw; }
+
+.small-11 {
+  flex-basis: 91.6666666667%; }
+
+.backgroundColor {
+  background-color: lightblue; }
+
+.column {
+  padding: 0 2vw; }
+
+.small-12 {
+  flex-basis: 100%; }
+
+.backgroundColor {
+  background-color: lightblue; }
+
+.column {
+  padding: 0 2vw; }
+
+.attorneys img {
+  max-width: 130px; }
+
+.attorneys h3 {
+  font-size: .9rem; }
 
 footer {
   width: 100vw;
   position: absolute;
   background-color: #eee;
   text-align: center;
-  padding: 1rem 2%;
+  padding: 1rem 2vw;
   overflow: hidden;
   margin-top: 100px; }
 
@@ -530,8 +593,47 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  .parent {
-    grid-template-columns: repeat(2, 0.8fr); }
+  header h1 {
+    font-size: 1.6rem; }
+
+  header h2 {
+    font-size: 1.3rem; }
+
+  .medium-1 {
+    flex-basis: 8.3333333333%; }
+
+  .medium-2 {
+    flex-basis: 16.6666666667%; }
+
+  .medium-3 {
+    flex-basis: 25%; }
+
+  .medium-4 {
+    flex-basis: 33.3333333333%; }
+
+  .medium-5 {
+    flex-basis: 41.6666666667%; }
+
+  .medium-6 {
+    flex-basis: 50%; }
+
+  .medium-7 {
+    flex-basis: 58.3333333333%; }
+
+  .medium-8 {
+    flex-basis: 66.6666666667%; }
+
+  .medium-9 {
+    flex-basis: 75%; }
+
+  .medium-10 {
+    flex-basis: 83.3333333333%; }
+
+  .medium-11 {
+    flex-basis: 91.6666666667%; }
+
+  .medium-12 {
+    flex-basis: 100%; }
 
   /* end of media query */ }
 @media only screen and (min-width: 1028px) {
@@ -545,11 +647,44 @@ footer {
     border-style: none solid none none; }
 
   nav ul {
-    padding-left: 2%;
+    padding-left: 2vw;
     display: block; }
 
-  .parent {
-    grid-template-columns: repeat(4, 0.3fr); }
+  .large-1 {
+    flex-basis: 8.3333333333%; }
+
+  .large-2 {
+    flex-basis: 16.6666666667%; }
+
+  .large-3 {
+    flex-basis: 25%; }
+
+  .large-4 {
+    flex-basis: 33.3333333333%; }
+
+  .large-5 {
+    flex-basis: 41.6666666667%; }
+
+  .large-6 {
+    flex-basis: 50%; }
+
+  .large-7 {
+    flex-basis: 58.3333333333%; }
+
+  .large-8 {
+    flex-basis: 66.6666666667%; }
+
+  .large-9 {
+    flex-basis: 75%; }
+
+  .large-10 {
+    flex-basis: 83.3333333333%; }
+
+  .large-11 {
+    flex-basis: 91.6666666667%; }
+
+  .large-12 {
+    flex-basis: 100%; }
 
   /* end of media query */ }
 

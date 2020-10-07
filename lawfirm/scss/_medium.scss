@@ -1,5 +1,12 @@
+header h1{
+	font-size: 1.6rem;
+}
+header h2{
+	font-size: 1.3rem;
+}
 
-.parent{
-	grid-template-columns: repeat(2, .8fr);
+@for $i from 1 through 12{
+    $w:($i/12)*100%;
+    .medium-#{$i} {flex-basis: $w;}
 }
  /* end of media query */
