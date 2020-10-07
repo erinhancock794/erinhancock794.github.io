@@ -404,7 +404,7 @@ html {
 body {
   font-family: "Quicksand";
   font-weight: 300;
-  font-size: 16px; }
+  font-size: 14px; }
 
 header {
   font-family: "Quicksand";
@@ -466,17 +466,11 @@ div.attorneys {
 .small-1 {
   flex-basis: 8.3333333333%; }
 
-.backgroundColor {
-  background-color: lightblue; }
-
 .column {
   padding: 0 2vw; }
 
 .small-2 {
   flex-basis: 16.6666666667%; }
-
-.backgroundColor {
-  background-color: lightblue; }
 
 .column {
   padding: 0 2vw; }
@@ -484,17 +478,11 @@ div.attorneys {
 .small-3 {
   flex-basis: 25%; }
 
-.backgroundColor {
-  background-color: lightblue; }
-
 .column {
   padding: 0 2vw; }
 
 .small-4 {
   flex-basis: 33.3333333333%; }
-
-.backgroundColor {
-  background-color: lightblue; }
 
 .column {
   padding: 0 2vw; }
@@ -502,17 +490,11 @@ div.attorneys {
 .small-5 {
   flex-basis: 41.6666666667%; }
 
-.backgroundColor {
-  background-color: lightblue; }
-
 .column {
   padding: 0 2vw; }
 
 .small-6 {
   flex-basis: 50%; }
-
-.backgroundColor {
-  background-color: lightblue; }
 
 .column {
   padding: 0 2vw; }
@@ -520,17 +502,11 @@ div.attorneys {
 .small-7 {
   flex-basis: 58.3333333333%; }
 
-.backgroundColor {
-  background-color: lightblue; }
-
 .column {
   padding: 0 2vw; }
 
 .small-8 {
   flex-basis: 66.6666666667%; }
-
-.backgroundColor {
-  background-color: lightblue; }
 
 .column {
   padding: 0 2vw; }
@@ -538,17 +514,11 @@ div.attorneys {
 .small-9 {
   flex-basis: 75%; }
 
-.backgroundColor {
-  background-color: lightblue; }
-
 .column {
   padding: 0 2vw; }
 
 .small-10 {
   flex-basis: 83.3333333333%; }
-
-.backgroundColor {
-  background-color: lightblue; }
 
 .column {
   padding: 0 2vw; }
@@ -556,26 +526,46 @@ div.attorneys {
 .small-11 {
   flex-basis: 91.6666666667%; }
 
-.backgroundColor {
-  background-color: lightblue; }
-
 .column {
   padding: 0 2vw; }
 
 .small-12 {
   flex-basis: 100%; }
 
-.backgroundColor {
-  background-color: lightblue; }
-
 .column {
   padding: 0 2vw; }
 
 .attorneys img {
-  max-width: 130px; }
+  max-width: 80%; }
 
 .attorneys h3 {
   font-size: .9rem; }
+
+.callToAction, .blog, .tips, .FAQ {
+  display: flex; }
+
+.callToAction {
+  margin: 3% 1px 3% 0px;
+  justify-content: center; }
+
+button {
+  border: none;
+  padding: 5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; }
+
+button:hover {
+  background-color: #555;
+  color: white; }
+
+.blog img {
+  max-width: 150px; }
+
+.tips {
+  display: grid;
+  grid-template-columns: 600px auto; }
 
 footer {
   width: 100vw;
@@ -585,6 +575,9 @@ footer {
   padding: 1rem 2vw;
   overflow: hidden;
   margin-top: 100px; }
+
+footer i {
+  size: 3x; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
