@@ -411,7 +411,13 @@ header {
   background-color: #364a55;
   padding: 0.5rem 2vw;
   display: grid;
-  grid-template-columns: 400px auto; }
+  grid-template-columns: 400px auto;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-style: solid none none none;
+  border-width: 5px;
+  border-color: #555;
+  padding-right: 5%; }
 
 header h1 {
   color: white;
@@ -461,7 +467,8 @@ nav li:hover {
 /*---COLUMNS----*/
 div.attorneys {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .small-1 {
   flex-basis: 8.3333333333%; }
@@ -550,7 +557,7 @@ div.attorneys {
 
 button {
   border: none;
-  padding: 5px 16px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -559,6 +566,11 @@ button {
 button:hover {
   background-color: #555;
   color: white; }
+
+.actionButton {
+  background-color: #364a55;
+  color: white;
+  padding: 15px 25px; }
 
 .blog img {
   max-width: 150px; }
@@ -575,9 +587,6 @@ footer {
   padding: 1rem 2vw;
   overflow: hidden;
   margin-top: 100px; }
-
-footer i {
-  size: 3x; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

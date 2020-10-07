@@ -17,8 +17,13 @@ header {
     padding: .5rem $gutter;
     display: grid;
     grid-template-columns: 400px auto;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-style: solid none none none;
+    border-width: 5px;
+    border-color: $menuColor;
+    padding-right: 5%;
 
-    
 }
 
 header h1 {
@@ -83,6 +88,7 @@ nav li:hover {
 div.attorneys{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 @for $i from 1 through 12{
     $w:($i/12)*100%;
@@ -108,9 +114,10 @@ div.attorneys{
 
 }
 
+
 button{
     border: none;
-    padding: 5px 16px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -119,6 +126,15 @@ button{
 button:hover{
     background-color: $menuColor;
     color: white;
+
+}
+
+.actionButton{
+    background-color:$primaryColor;
+    color: white;
+    padding: 15px 25px;
+
+
 }
 
 .blog img{
@@ -139,9 +155,7 @@ button:hover{
     overflow: hidden;
     margin-top: 100px;
 }
-footer i{
-    size: 3x;
-}
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
