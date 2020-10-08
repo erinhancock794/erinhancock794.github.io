@@ -6,19 +6,7 @@
 
     }
 
-    nav li {
-        float: left;
-        padding: 0 2% 0 2%;
-        border-style: none solid none none;
-    
-    }
 
-    
-    nav ul {
-        padding-left: $gutter;
-        display: block;
-
-    }
 
     @for $i from 1 through 12{
         $w:($i/12)*100%;

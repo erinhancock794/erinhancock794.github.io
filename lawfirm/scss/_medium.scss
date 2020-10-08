@@ -4,10 +4,39 @@ header h1{
 header h2{
 	font-size: 1.3rem;
 }
+nav li {
+	float: left;
+	padding: 0 2% 0 2%;
+	border-style: none solid none none;
 
+}
+
+
+nav ul {
+	padding-left: $gutter;
+	display: block;
+
+}
 
 @for $i from 1 through 12{
     $w:($i/12)*100%;
     .medium-#{$i} {flex-basis: $w;}
+}
+
+
+.callToAction, .blog{
+	display:flex;
+}
+
+
+.tips{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+.FAQ{
+background-color: lightblue;
+height: 150px;
+grid-template-columns: 50% auto;
+
 }
  /* end of media query */
