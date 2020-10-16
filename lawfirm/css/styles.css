@@ -661,7 +661,7 @@ footer {
     margin: 2%; }
 
   .tips {
-    display: inline; }
+    display: block; }
 
   .blog, .groupFAQ {
     display: flex; }

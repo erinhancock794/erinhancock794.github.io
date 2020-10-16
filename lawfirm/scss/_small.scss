@@ -63,8 +63,6 @@ nav li {
     font-family: $fontFamily;
     font-size: .8rem;
     list-style-type: none;
-    // align-content: space-evenly;
-    // margin: auto;
     padding: 0 1% 0 1%;
     
 
@@ -142,15 +140,12 @@ button:hover{
     margin-bottom: 50px;
 }
 
-
 .tips{
     display: none;
-    // grid-template-columns: 600px auto;
 }
 
   footer {
     width: 100vw;
-    // display: block;
     position: absolute;
     background-color: $footerColor;
     text-align: center;
