@@ -15,26 +15,25 @@ header {
     font-family: $fontFamily;
     background-color: $primaryColor;
     padding: .5rem $gutter;
-    display: grid;
+    display: column;
     // grid-template-columns: 400px auto;
-    align-items: flex-end;
-    justify-content: space-between;
+    // align-items: flex-end;
+    // justify-content: space-between;
     border-style: solid none none none;
     border-width: 5px;
     border-color: $menuColor;
-    padding-right: 5%;
+    // padding-right: 5%;
 
 }
-
-header h1 {
-    
+.headerText {
     color: white;
-	margin: 0; 
+    margin:auto;
+}
+header h1 {
     font-size: 1.5rem;
     font-weight: $heavyWeight;
 }
 header h2{
-    color: white;
     font-size: 1rem; 
 }
 
@@ -43,6 +42,13 @@ header figure.logo{
     float: left;
     margin: 0 2% 0 0;
 }
+
+.searchbar {
+float: right;
+margin: 0;
+}
+
+
 
 nav {
     background-color: darken($menuColor, 20%);
@@ -74,12 +80,20 @@ nav li:hover {
     background-color: $menuColor};
 
 /*---Main---*/
+.attorneys, .blogButton {
+    display: flex; 
+    flex-wrap: wrap; 
+}
 
 /*---COLUMNS----*/
 div.attorneys{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-left: 5%;
+    margin-bottom: 2%;
+  
+  
 }
 @for $i from 1 through 12{
     $w:($i/12)*100%;
@@ -87,7 +101,6 @@ div.attorneys{
     .column{padding: 0 $gutter;}
     
 }
-
 .attorneys img{
     max-width: 80%;
 }
@@ -95,33 +108,26 @@ div.attorneys{
     font-size: .9rem;
 }
 
-.tips, .FAQ{
-    display: flex;
-
-}
 .callToAction{
-    margin: 3% 1px 3% 1px;
-    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 .actionButton{
+    width: 70vw;
     background-color:$primaryColor;
     color: white;
     padding: 15px 25px;
     margin-bottom: 2%;
-    // width: 90vw;
-
-
 }
-
 
 button{
     border: none;
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
 }
 button:hover{
     background-color: $menuColor;
@@ -129,11 +135,14 @@ button:hover{
 
 }
 
-
-
-.blog img{
-    max-width: 150px;
+.blog img {
+    max-width: 100%;
 }
+.blogButton {
+    margin-bottom: 50px;
+}
+
+
 .tips{
     display: none;
     // grid-template-columns: 600px auto;

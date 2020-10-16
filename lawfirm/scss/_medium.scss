@@ -24,19 +24,23 @@ nav ul {
 }
 
 
-.callToAction, .blog{
+.callToAction {
 	display:flex;
+	flex-direction: row;
+	padding-bottom: 20px;
+	justify-content: space-evenly;
 }
+.actionButton {
+	width: 25vw;
+	margin: 2%;
 
-
+}
 .tips{
-    display: grid;
-    grid-template-columns: 50% auto;
-}
-.FAQ{
-background-color: lightblue;
-height: 150px;
-grid-template-columns: 50% auto;
 
+	display: inline;
 }
+.blog, .groupFAQ {
+	display: flex; 
+}
+
  /* end of media query */
