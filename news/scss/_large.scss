@@ -1,11 +1,24 @@
 
 
-    header, main, nav ul {
-        max-width: 1200px;
+    main, nav ul {
+        max-width: 80rem;
         margin:auto;
 
     }
-
+    nav ul{
+        margin: 0;
+    }
+    nav ul li a{
+        padding: .6rem 1rem;
+    }
+    .storyGrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .lead{
+            grid-column: 1/span 3;
+            grid-row: 1/ span 2;
+        }
+    
+    }
 
 
     @for $i from 1 through 12{
@@ -13,4 +26,8 @@
         .large-#{$i} {flex-basis: $w;}
     }
 
+
+    footer .parent{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
  /* end of media query */

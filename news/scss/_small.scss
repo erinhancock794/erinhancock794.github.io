@@ -15,44 +15,85 @@ header {
     font-family: $fontFamily;
     background-color: $primaryColor;
     padding: .5rem $gutter;
+    width: 100vw;
+
+    
 }
 
 
-header figure.logo{
-    float: left;
-    margin: 0 2% 0 0;
+figure.headerLogo img{ 
+    max-width: 100px;
+    margin: 0;
 }
 
 nav {
     background-color: darken($menuColor, 20%);
 }
 
+nav button {
+     margin: .2rem 2%;
+     background-color: transparent;
+     border: none;
+     font-size: 1.6rem;
+     color: $menuColor;
+     cursor: pointer;
+}
+
 nav ul{
-    margin:auto; 
-    padding-left: 3%;
-    padding-right: 3%;
+    list-style-type: none;
+    margin:0; 
+    padding: 0;
 }
 nav li {
     font-family: $fontFamily;
     font-size: .8rem;
-    list-style-type: none;
     padding: 0 1% 0 1%;
     
 
 }
 
-nav li.active {background-color: lighten($menuColor, 10%)}
-nav a {
+nav ul li a {
     display: block;
-    padding: .5rem .2rem;
+    padding: .5rem 2%;
     color: #eee;
     text-decoration: none;
-}
+    border-top: 1px solid rgba(0,0,0,.5)
+} 
+
+
 nav li:hover {
-    background-color: $menuColor};
+    background-color: $menuColor;
+};
+
+ nav ul li a.active{
+        background-color: lighten($menuColor, 10%)}
+
+nav ul.hide{
+    display:none;
+}
 
 /*---Main---*/
+.storyGrid{
+    display:grid;
+    margin: 0 2vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    span{
+        display:block;
+        text-align:center;
+        font-size: .75rem;
+    }
+    .teaser, .lead{
+        padding: .5rem 2vw;
+    }
+    .teaser img, .lead img{
+        width: 100%;
+    }
+    .lead {
+        grid-column: 1 / span 2;
+    }
 
+}
 
 /*---COLUMNS----*/
 
@@ -78,10 +119,11 @@ footer ul {
     list-style-type: none;
 }
 
-footer .footerInfo {
+footer .parent {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
+    justify-content: flex-start;
 }
 
 
@@ -91,3 +133,7 @@ footer .footerInfo {
   display: table;
   clear: both;
 }
+
+
+//img sizes: lead img needs to be 906px wide
+// teaser img needs to be 350px

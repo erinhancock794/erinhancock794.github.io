@@ -33,17 +33,18 @@
     <!-- HEADER HERE -->
     <header>
         <figure class="headerLogo">
-            <img src="">
+            <img src="/images/logo.png">
         </figure>
     </header>
 
 
     <!-- NAVIGATION HERE -->
     <nav class="clearfix">
-        <ul>
+        <button onclick="toggleMenu()">&equiv;</button>
+        <ul id="navList" class="hide">
             <li><a href="#">Home</a></li>
             <li><a href="#">Opinion</a></li>
-            <li><a class="active" href="index.html">Politics</a></li>
+            <li><a class="active" href="#">Politics</a></li>
             <li><a href="#">Business</a></li>
         </ul>
     </nav>
@@ -51,45 +52,76 @@
 
     <!-- CONTENT HERE -->
     <main>
+        <div class="storyGrid">
+            <div class="lead"> 
+                <img src="images/lead1.jpg">
+                <span> Students Spend More Time On Computers</span>
+            </div>
+            <div class="teaser">
+                <img src="images/teaser1.jpg">
+                <span> Is Soccer a Safe Covid Activity?</span>
+            </div>
+            <div class="teaser">
+                <img src="images/teaser2.jpg">
+                <span> Teaser Story</span>
+            </div>
+            <div class="teaser">
+                <img src="images/teaser3.jpg">
+                <span> Teaser Story</span>
+            </div>
+            <div class="teaser">
+                <img src="images/teaser4.jpg">
+                <span> Teaser Story</span>
+            </div>
+            <div class="teaser">
+                <img src="images/teaser5.jpg">
+                <span> Teaser Story</span>
+            </div>
+            <div class="teaser">
+                <img src="images/teaser6.jpg">
+                <span> Teaser Story</span>
+            </div>
+
+        </div>
     </main>
 
     <!-- FOOTER HERE -->
     <footer>
-        <div class="footerInfo">
-        <ul>
-            <h3>Sections</h3>
-            <li>Home</li>
-            <li>Video</li>
-            <li>Opinion</li>
-            <li>Entertainment</li>
-            <li>Health</li>
-        </ul>
+        <div class="parent">
+            <ul>
+                <h3>Sections</h3>
+                <li>Home</li>
+                <li>Video</li>
+                <li>Opinion</li>
+                <li>Entertainment</li>
+                <li>Health</li>
+            </ul>
 
-        <ul>
-            <h3>Shows</h3>
-            <li>Happenings</li>
-            <li>Sunday AM</li>
-            <li>Newsroom</li>
-            <li>World</li>
-        </ul>
+            <ul>
+                <h3>Shows</h3>
+                <li>Happenings</li>
+                <li>Sunday AM</li>
+                <li>Newsroom</li>
+                <li>World</li>
+            </ul>
 
-        <ul>
-            <h3>Tools</h3>
-            <li>Jobs</li>
-            <li>Privacy Policy</li>
-            <li>Contact Us</li>
-            <li>Media Relations</li>
-        </ul>
+            <ul>
+                <h3>Tools</h3>
+                <li>Jobs</li>
+                <li>Privacy Policy</li>
+                <li>Contact Us</li>
+                <li>Media Relations</li>
+            </ul>
 
-        <ul>
-            <h3>Personalities</h3>
-            <li>Jake Johnson</li>
-            <li>Annie Oakley</li>
-            <li>Ronan Farrow</li>
-            <li>Aaron Sorkin</li>
-            <li>Eddie Vedder</li>
-        </ul>
-    </div>
+            <ul>
+                <h3>Personalities</h3>
+                <li>Jake Johnson</li>
+                <li>Annie Oakley</li>
+                <li>Ronan Farrow</li>
+                <li>Aaron Sorkin</li>
+                <li>Eddie Vedder</li>
+            </ul>
+        </div>
 
         <p>&copy; 2020 &bull; Erin Hancock &bull; All Rights Reserved</p>
     </footer>
