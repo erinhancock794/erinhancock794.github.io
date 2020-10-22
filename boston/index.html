@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="News">
+    <meta name="author" content="Erin Hancock">
+    <title>Boston</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <h1>Boston City</h1>
+        <h2>Where History Comes Alive</h2>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv;</button>
+        <ul id="navList" class="hide">
+            <li><a href="#">Visit</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a class="active" href="#">Services</a></li>
+            <li><a href="#">Pay Bills</a></li>
+            <li><a href="#">Meetings</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main>
+        <!--slide content-->
+        <div class="my_slider">
+            <div>
+                <img src="" alt="slider">
+            </div>
+            <div> <img src="" alt="slider">
+            </div>
+            <div> <img src="" alt="slider">
+            </div>
+        </div>
+
+        <!--plan your visit -->
+        <h2>Plan Your Visit</h2>
+
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <p>&copy; 2020 &bull; Erin Hancock &bull; All Rights Reserved</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.my_slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                cssEase: 'ease-out',
+                autoplay: true,
+                autoplaySpeed: 30000
+            })
+        })
+    </script>
+</body>
+
+</html>
