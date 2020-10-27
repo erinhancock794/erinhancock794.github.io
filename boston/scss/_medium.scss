@@ -2,8 +2,13 @@
 nav button {
 	display: none;
 }
+nav{
+	background: rgb(4,2,38);
+background: linear-gradient(90deg, rgba(4,2,38,1) 0%, rgba(110,110,110,1) 100%);
+}
 nav li {
 	float: left;
+	
 }
 
 
@@ -25,20 +30,14 @@ nav ul.hide{
 }
 
 
-.storyGrid{
-	grid-template-columns: 1fr 1fr 1fr;
-	span{font-size: 1rem;}
-	.lead{grid-column: 1/span 3}
-}
+.card-hover {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2%;
+	grid-row-gap: 1%;
+    // height: 300px;
 
+  }
 
-@for $i from 1 through 12{
-    $w:($i/12)*100%;
-    .medium-#{$i} {flex-basis: $w;}
-}
-
-footer .parent{
-	grid-template-columns: 2fr 2fr;
-}
 
  /* end of media query */

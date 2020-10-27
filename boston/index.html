@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
         integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 
@@ -55,17 +55,69 @@
     <main>
         <!--slide content-->
         <div class="my_slider">
-            <div>
-                <img src="" alt="slider">
+            <picture>
+                <source srcset="images/slide1-small.jpg" media="(max-width: 30rem)">
+                <source srcset="images/slide1-large.jpg" media="(min-width: 30rem)">
+                <img src="images/slide1-large.jpg" alt="slider">
+            </picture>
+
+            <picture>
+                <source srcset="images/slide2-small.jpg" media="(max-width: 30rem)">
+                <source srcset="images/slide2-large.jpg" media="(min-width: 30rem)">
+                <img src="images/slide2-large.jpg" alt="slider">
+            </picture>
+
+            <picture>
+                <source srcset="images/slide3-small.jpg" media="(max-width: 30rem)">
+                <source srcset="images/slide3-large.jpg" media="(min-width: 30rem)">
+                <img src="images/slide3-large.jpg" alt="slider">
+            </picture>
+
+            <picture>
+                <source srcset="images/slide4-small.jpg" media="(max-width: 30rem)">
+                <source srcset="images/slide4-large.jpg" media="(min-width: 30rem)">
+                <img src="images/slide4-large.jpg" alt="slider">
+            </picture>
+
+            <picture>
+                <source srcset="images/slide5-small.jpg" media="(max-width: 30rem)">
+                <source srcset="images/slide5-large.jpg" media="(min-width: 30rem)">
+                <img src="images/slide5-large.jpg" alt="slider">
+            </picture>
             </div>
-            <div> <img src="" alt="slider">
-            </div>
-            <div> <img src="" alt="slider">
-            </div>
-        </div>
 
         <!--plan your visit -->
         <h2>Plan Your Visit</h2>
+
+        <div class="card-hover">
+            <a class="card" href="#">
+                <div class="info">
+                <i class="fas fa-bed"></i>
+                <h3>Places To Stay</h3>
+                </div>
+            </a>
+
+            <a class="card" href="#">
+                <div class="info">
+                <i class="fas fa-angle-double-right"></i>
+                <h3>Walk The Red Line</h3>
+                </div>
+            </a>
+
+            <a class="card" href="#">
+                <div class="info">                <i class="fab fa-angellist"></i>
+                <h3>Pass To The City</h3>
+                </div>
+            </a>
+
+            <a class="card" href="#">
+                <div class="info">
+                <i class="fas fa-utensils"></i>
+                <h3>Fine Dining</h3>
+                </div>
+            </a>
+
+        </div>
 
 
     </main>
@@ -75,6 +127,8 @@
         <p>&copy; 2020 &bull; Erin Hancock &bull; All Rights Reserved</p>
     </footer>
 
+
+    <!-- JQUERY -->
     <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
@@ -86,7 +140,7 @@
                 infinite: true,
                 cssEase: 'ease-out',
                 autoplay: true,
-                autoplaySpeed: 30000
+                autoplaySpeed: 4000
             })
         })
     </script>

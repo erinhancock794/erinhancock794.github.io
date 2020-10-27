@@ -408,10 +408,15 @@ body {
   font-size: 14px; }
 
 header {
-  font-family: "Quicksand";
-  background-color: #9e493a;
-  padding: 0.5rem 2vw;
-  width: 100vw; }
+  background-image: url(../images/headerimg.jpg);
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-position: bottom;
+  height: 150px;
+  padding: 0 2%;
+  margin-top: -20px;
+  position: bottom; }
 
 nav {
   background-color: #222222; }
@@ -422,7 +427,8 @@ nav button {
   border: none;
   font-size: 1.6rem;
   color: #555;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none; }
 
 nav ul {
   list-style-type: none;
@@ -451,6 +457,66 @@ nav ul.hide {
   display: none; }
 
 /*---Main---*/
+picture {
+  position: relative;
+  margin: 0;
+  padding: 0; }
+
+picture img {
+  width: 100%; }
+
+.card-hover .card {
+  display: block;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  text-decoration: none;
+  padding: 3%;
+  transition: 0.5s;
+  color: #fff;
+  margin-bottom: 3%; }
+
+.card .info {
+  height: 100%;
+  padding-top: 5%; }
+
+.card-hover .card:hover {
+  background-color: none; }
+  .card-hover .card:hover i {
+    filter: drop-shadow(0px 3px 3px black); }
+
+.card:nth-child(1) {
+  background-color: #9e493a; }
+
+.card:nth-child(2) {
+  background-color: #559ee7; }
+
+.card:nth-child(3) {
+  background-color: #9e493a; }
+
+.card:nth-child(4) {
+  background-color: #559ee7; }
+
+.card:nth-child(1):hover {
+  background: url(/images/hotel.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.card:nth-child(2):hover {
+  background: url(/images/walking.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.card:nth-child(3):hover {
+  background: url(/images/nightcity.jpeg);
+  background-size: cover;
+  background-position: center; }
+
+.card:nth-child(4):hover {
+  background: url(/images/dining.jpg);
+  background-size: cover;
+  background-position: center; }
+
 /*---COLUMNS----*/
 footer {
   width: 100vw;
@@ -460,15 +526,6 @@ footer {
   padding: 1rem 2vw;
   overflow: hidden;
   margin-top: 100px; }
-
-footer ul {
-  list-style-type: none; }
-
-footer .parent {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  justify-content: flex-start; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -684,6 +741,10 @@ footer .parent {
   nav button {
     display: none; }
 
+  nav {
+    background: #040226;
+    background: linear-gradient(90deg, #040226 0%, #6e6e6e 100%); }
+
   nav li {
     float: left; }
 
@@ -699,56 +760,16 @@ footer .parent {
   nav ul.hide {
     display: block; }
 
-  .storyGrid {
-    grid-template-columns: 1fr 1fr 1fr; }
-    .storyGrid span {
-      font-size: 1rem; }
-    .storyGrid .lead {
-      grid-column: 1/span 3; }
-
-  .medium-1 {
-    flex-basis: 8.3333333333%; }
-
-  .medium-2 {
-    flex-basis: 16.6666666667%; }
-
-  .medium-3 {
-    flex-basis: 25%; }
-
-  .medium-4 {
-    flex-basis: 33.3333333333%; }
-
-  .medium-5 {
-    flex-basis: 41.6666666667%; }
-
-  .medium-6 {
-    flex-basis: 50%; }
-
-  .medium-7 {
-    flex-basis: 58.3333333333%; }
-
-  .medium-8 {
-    flex-basis: 66.6666666667%; }
-
-  .medium-9 {
-    flex-basis: 75%; }
-
-  .medium-10 {
-    flex-basis: 83.3333333333%; }
-
-  .medium-11 {
-    flex-basis: 91.6666666667%; }
-
-  .medium-12 {
-    flex-basis: 100%; }
-
-  footer .parent {
-    grid-template-columns: 2fr 2fr; }
+  .card-hover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 1%; }
 
   /* end of media query */ }
 @media only screen and (min-width: 64rem) {
   main, nav ul {
-    max-width: 80rem;
+    max-width: 1024rem;
     margin: auto; }
 
   nav ul {
@@ -757,49 +778,7 @@ footer .parent {
   nav ul li a {
     padding: .6rem 1rem; }
 
-  .storyGrid {
-    grid-template-columns: 1fr 1fr 1fr 1fr; }
-    .storyGrid .lead {
-      grid-column: 1/span 3;
-      grid-row: 1/ span 2; }
-
-  .large-1 {
-    flex-basis: 8.3333333333%; }
-
-  .large-2 {
-    flex-basis: 16.6666666667%; }
-
-  .large-3 {
-    flex-basis: 25%; }
-
-  .large-4 {
-    flex-basis: 33.3333333333%; }
-
-  .large-5 {
-    flex-basis: 41.6666666667%; }
-
-  .large-6 {
-    flex-basis: 50%; }
-
-  .large-7 {
-    flex-basis: 58.3333333333%; }
-
-  .large-8 {
-    flex-basis: 66.6666666667%; }
-
-  .large-9 {
-    flex-basis: 75%; }
-
-  .large-10 {
-    flex-basis: 83.3333333333%; }
-
-  .large-11 {
-    flex-basis: 91.6666666667%; }
-
-  .large-12 {
-    flex-basis: 100%; }
-
-  footer .parent {
+  .card-hover {
     grid-template-columns: 1fr 1fr 1fr 1fr; }
 
   /* end of media query */ }
