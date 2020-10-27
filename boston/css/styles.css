@@ -415,8 +415,7 @@ header {
   background-position: bottom;
   height: 150px;
   padding: 0 2%;
-  margin-top: -20px;
-  position: bottom; }
+  margin-top: -20px; }
 
 nav {
   background-color: #222222; }
@@ -480,10 +479,8 @@ picture img {
   height: 100%;
   padding-top: 5%; }
 
-.card-hover .card:hover {
-  background-color: none; }
-  .card-hover .card:hover i {
-    filter: drop-shadow(0px 3px 3px black); }
+.card-hover .card:hover i {
+  filter: drop-shadow(0px 3px 3px black); }
 
 .card:nth-child(1) {
   background-color: #9e493a; }
