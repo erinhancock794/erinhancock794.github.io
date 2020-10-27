@@ -498,7 +498,7 @@ picture img {
   background-color: #559ee7; }
 
 .card:nth-child(1):hover {
-  background: url(/images/hotel.jpg);
+  background: url(../../boston/images/hotel.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -508,7 +508,7 @@ picture img {
   background-position: center; }
 
 .card:nth-child(3):hover {
-  background: url(../images/nightcity.jpeg);
+  background: url(../../boston/images/nightcity.jpeg);
   background-size: cover;
   background-position: center; }
 
