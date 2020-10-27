@@ -508,7 +508,7 @@ picture img {
   background-position: center; }
 
 .card:nth-child(3):hover {
-  background: url(../../boston/images/nightcity.jpeg);
+  background: url(../images/nightcity.jpeg);
   background-size: cover;
   background-position: center; }
 
