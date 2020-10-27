@@ -765,8 +765,8 @@ footer {
 
   /* end of media query */ }
 @media only screen and (min-width: 64rem) {
-  main, nav ul {
-    max-width: 1024rem;
+  main, header, nav {
+    max-width: 64rem;
     margin: auto; }
 
   nav ul {
