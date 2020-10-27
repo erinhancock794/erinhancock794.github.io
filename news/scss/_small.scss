@@ -125,6 +125,9 @@ footer .parent {
     grid-template-rows: auto;
     justify-content: flex-start;
 }
+footer .parent span {
+    font-weight: $heavyWeight;
+} 
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
