@@ -405,7 +405,8 @@ html {
 body {
   font-family: "Quicksand";
   font-weight: 300;
-  font-size: 14px; }
+  font-size: 14px;
+  margin-top: -20px; }
 
 header {
   background-image: url(../images/headerimg.jpg);
@@ -414,8 +415,7 @@ header {
   background-size: cover;
   background-position: bottom;
   height: 150px;
-  padding: 0 2%;
-  margin-top: -20px; }
+  padding: 0 2%; }
 
 nav {
   background-color: #222222; }
