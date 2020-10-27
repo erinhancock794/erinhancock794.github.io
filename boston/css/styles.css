@@ -503,17 +503,17 @@ picture img {
   background-position: center; }
 
 .card:nth-child(2):hover {
-  background: url(/images/walking.jpg);
+  background: url(../../boston/images/walking.jpg);
   background-size: cover;
   background-position: center; }
 
 .card:nth-child(3):hover {
-  background: url(/images/nightcity.jpeg);
+  background: url(../../boston/images/nightcity.jpeg);
   background-size: cover;
   background-position: center; }
 
 .card:nth-child(4):hover {
-  background: url(/images/dining.jpg);
+  background: url(../../boston/images/dining.jpg);
   background-size: cover;
   background-position: center; }
 
