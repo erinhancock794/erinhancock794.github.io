@@ -80,6 +80,7 @@
                    <option value="lavender">Lavender</option>
                    <option value="ashgrey">Ash Grey</option>
                  </label>     
+                 <label>Quantity <input type="number"></label>
 
                 <div>Material</div>
                 <label><input type="radio" name="material"value="aluminum"> Aluminum </label>
@@ -89,9 +90,9 @@
 
             <fieldset>
                 <legend>Payment Information</legend>
-                Name on Card <input type="text" name="fname">
-                Card Number <input type="text" name="fname">
-                Expiration Date <input type="text" name="fname">
+               <label> Name on Card <input type="text" name="fname" required></label>
+               <label> Card Number <input type="number" name="number" required></label>
+               <label> Expiration Date <input type="date" name="fname" required></label>
 
             </fieldset>
 
