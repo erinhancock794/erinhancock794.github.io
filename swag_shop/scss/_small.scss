@@ -1,0 +1,178 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: $fontText;
+    font-weight: $regularWeight;
+    font-size: 14px;
+    margin-top: -20px;
+}
+
+header {
+  display: flex;
+    background-size: cover;
+    background-position:bottom;
+    height: 150px;
+    padding: 0 2%;
+}
+header img{
+  max-width: 10%;
+  // height: 10%;
+
+}
+
+
+
+nav {
+    background-color: darken($menuColor, 20%);
+}
+
+nav button {
+     margin: .2rem 2%;
+     background-color: transparent;
+     border: none;
+     font-size: 1.6rem;
+     color: $menuColor;
+     cursor: pointer;
+     outline:none;
+}
+
+nav ul{
+    list-style-type: none;
+    margin:0; 
+    padding: 0;
+}
+nav li {
+    font-family: $fontFamily;
+    font-size: .8rem;
+    padding: 0 1% 0 1%;
+    
+
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem 2%;
+    color: #eee;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,.5)
+} 
+
+
+nav li:hover {
+    background-color: $menuColor;
+};
+
+ nav ul li a.active{
+        background-color: lighten($menuColor, 10%)}
+
+nav ul.hide{
+    display:none;
+}
+
+/*---Main---*/
+picture {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+picture img {
+    width: 100%;
+}
+
+
+.card-hover .card {
+    display: block;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    text-decoration: none;
+    padding: 3%;
+    transition: 0.5s;
+    color: #fff;
+    margin-bottom: 3%;
+  }
+
+.card .info {
+    height: 100%;
+    padding-top: 5%;
+}
+
+
+.card-hover .card:hover {
+  i{
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
+  }
+}
+
+.card:nth-child(1) {
+  background-color: $primaryColor;
+}
+.card:nth-child(2) {
+  background-color: $secondaryColor;
+}
+.card:nth-child(3) {
+  background-color: $primaryColor;
+}
+.card:nth-child(4) {
+  background-color: $secondaryColor;
+}
+
+.card:nth-child(1):hover {
+  background:
+    url(../../boston/images/hotel.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card:nth-child(2):hover {
+  background:
+    url(../../boston/images/walking.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.card:nth-child(3):hover {
+  background:
+    url(../../boston/images/nightcity.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card:nth-child(4):hover {
+  background:
+    url(../../boston/images/dining.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/*---COLUMNS----*/
+
+
+
+  footer {
+    width: 100vw;
+    position: absolute;
+    background-color: $footerColor;
+    text-align: center;
+    padding: 1rem $gutter;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+//img sizes: lead img needs to be 906px wide
+// teaser img needs to be 350px

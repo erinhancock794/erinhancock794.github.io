@@ -1,0 +1,43 @@
+
+nav button {
+	display: none;
+}
+nav{
+	background: rgb(4,2,38);
+background: linear-gradient(90deg, rgba(4,2,38,1) 0%, rgba(110,110,110,1) 100%);
+}
+nav li {
+	float: left;
+	
+}
+
+
+nav ul {
+	padding-left: $gutter;
+	display: block;
+	margin-left:2%;
+
+}
+nav ul li a{ 
+	border: none;
+	padding: .8rem 1rem;
+
+
+}
+
+nav ul.hide{
+	display:block;
+}
+
+
+.card-hover {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2%;
+	grid-row-gap: 1%;
+    // height: 300px;
+
+  }
+
+
+ /* end of media query */

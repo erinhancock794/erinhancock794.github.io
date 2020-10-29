@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Swag Shop">
+    <meta name="author" content="Erin Hancock">
+    <title>Swag Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+        integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <img src="images/coffee_logo.png" alt="logo">
+        <div class="title">
+        <h1>Espresso Yourself</h1>
+        <h2>Make Your Love of Coffee Known</h2>
+    </div>
+    </header>
+    <!--wrap all inputs in labels in tags-->
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv;</button>
+        <ul id="navList" class="hide">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Order</a></li>
+            <li><a href="#">Customer Reviews</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main>
+        <h1>Order</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>Full Name* <input type="text" name="fname" required></label>
+                <label>Phone* <input type="tel" name="phone" required></label>
+                <label>Email <input type="email" name="email"></label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Merch Details</legend>
+
+
+               <label> Date Needed <input type="text" name="fname"></label>
+                <label>Business Name <input type="text" name="fname"></label>
+               <label> Business URL <input type="url" name="url"></label>
+               <label>Color <select name="color">
+                   <option value="">Please Select</option>
+                   <option value="mintgreen">Mint Green</option>
+                   <option value="skyblue">Sky Blue</option>
+                   <option value="mochabrown">Mocha Brown</option>
+                   <option value="lavender">Lavender</option>
+                   <option value="ashgrey">Ash Grey</option>
+                 </label>     
+
+                <div>Material</div>
+                <label><input type="radio" name="material"value="aluminum"> Aluminum </label>
+                <label><input type="radio" name="material"value="plastic"> Plastic </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment Information</legend>
+                Name on Card <input type="text" name="fname">
+                Card Number <input type="text" name="fname">
+                Expiration Date <input type="text" name="fname">
+
+            </fieldset>
+
+
+            <input type="submit" value="Order My Merch">
+        </form>
+     
+
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        <p>&copy; 2020 &bull; Erin Hancock &bull; All Rights Reserved &bull; Login</p>
+    </footer>
+
+
+    <!-- JQUERY -->
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.my_slider').slick({
+                dots: true,
+                arrows: false,
+                infinite: true,
+                cssEase: 'ease-out',
+                autoplay: true,
+                autoplaySpeed: 4000
+            })
+        })
+    </script>
+</body>
+
+</html>
