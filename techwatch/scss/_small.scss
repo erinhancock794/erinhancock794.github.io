@@ -1,0 +1,170 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+div.pageWrapper {
+    display: grid;
+    grid-template-areas:
+      "hamburger"
+      "header"
+      "content"
+      "footer"
+      "navigation";
+    grid-template-columns: 100%;
+  }
+
+
+  /* body rules */
+body {
+    font-family: $fontText;
+    font-weight: $regularWeight;
+    font-size: 14px;
+    background-color: rgb(208, 208, 208);
+}
+
+header {
+    grid-area: header;
+    font-family: $fontFamily;
+    background-color: $primaryColor;
+    padding: .5rem $gutter;
+    width: 100vw;
+    img{ height: 10px}
+
+    
+}
+
+
+/*navigation*/
+
+a.jump{
+    display: block;
+    width: 60px;
+    font-size: 1.7rem;
+    padding: 0.4rem;
+    padding-left: 2%;
+    text-decoration: none;
+}
+nav {
+    grid-area: navigation;
+    background-color: darken($menuColor, 20%);
+    height: 100vh;
+}
+
+
+nav ul{
+    list-style-type: none;
+    margin:0; 
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+    font-family: $fontFamily;
+    font-size: .8rem;
+    padding: 0 1% 0 1%;
+    flex-basis: 100%;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem 2%;
+    color: #eee;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,.5);
+} 
+nav ul li.active a{
+    background-color: lighten($menuColor, 10%);
+}
+
+
+nav ul li a:hover {
+    background-color: $menuColor;
+};
+
+/*---hamburger---*/
+div#hamburger{
+    grid-area: hamburger;
+    background-color: $menuColor;
+}
+
+div#hamburger a{
+    color: white;
+}
+
+/*---Main---*/
+main {
+    grid-area: content;
+    padding: 2%;
+    padding-bottom: $gutter;
+    min-height: 10rem;
+    color: black;
+}
+  
+h1 {
+    font-weight: 800;
+    font-size: 1.36rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.rowOne, .rowTwo, .rowThree {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1.4rem 0;
+
+    .columnOne {
+        order: 1;
+        padding-bottom: .3rem;
+    }
+    .columnTwo{
+        order: 2;
+    }
+    .columnThree{
+        order: 3;
+    }
+    img{
+        width: 100%;
+    }
+}
+  
+
+  footer {
+    grid-area: footer;
+    width: 100vw;
+    position: bottom;
+    background-color: $footerColor;
+    text-align: center;
+    padding: 1rem $gutter;
+    overflow: hidden;
+    // margin-top: 100px;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+//img sizes: lead img needs to be 906px wide
+// teaser img needs to be 350px
