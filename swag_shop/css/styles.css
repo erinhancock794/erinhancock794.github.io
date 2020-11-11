@@ -429,30 +429,52 @@ nav button {
   cursor: pointer;
   outline: none; }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
+#hamburgerBtn span:nth-child(1) {
+  display: block; }
+
+#hamburgerBtn span:nth-child(2) {
+  display: none; }
+
+#hamburgerBtn.open span:nth-child(1) {
+  display: none; }
+
+#hamburgerBtn.open span:nth-child(2) {
+  display: block; }
+
+#navList {
+  height: 0;
+  overflow: hidden; }
+
+#navList.open {
+  height: auto; }
+
+#navList li ul {
+  display: none; }
+
+#navList li.parent a::after {
+  content: ' \25BC'; }
+
+#navList li:hover ul {
+  display: block; }
 
 nav li {
+  list-style-type: none;
   font-family: "Quicksand";
-  font-size: .8rem;
-  padding: 0 1% 0 1%; }
+  font-size: .8rem; }
 
 nav ul li a {
   display: block;
   padding: .5rem 2%;
   color: #eee;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: background 0.3s linear;
+  transition: background 0.3s linear; }
 
 nav li:hover {
   background-color: #8a7956; }
 
-nav ul li a.active {
+nav ul li a.parent {
   background-color: #a5936e; }
-
-nav ul.hide {
-  display: none; }
 
 /*---Main---*/
 main {
@@ -509,7 +531,6 @@ form label.top input:required:valid {
 
 footer {
   width: 100vw;
-  position: absolute;
   background-color: #eee;
   text-align: center;
   padding: 1rem 2vw;
@@ -730,23 +751,37 @@ footer {
   nav button {
     display: none; }
 
+  #navList {
+    height: auto; }
+
   nav {
     background-color: #044c5e; }
 
-  nav li {
-    float: left; }
-
   nav ul {
     padding-left: 2vw;
-    display: block;
-    margin-left: 2%; }
+    margin: 0; }
 
   nav ul li a {
+    display: block;
     border: none;
     padding: .8rem 1rem; }
 
-  nav ul.hide {
-    display: block; }
+  ul > li {
+    float: left; }
+
+  ul li ul {
+    z-index: 998;
+    position: absolute;
+    background-color: #033846;
+    left: 999em;
+    width: 8em;
+    margin: 0;
+    float: left; }
+
+  ul li:hover ul {
+    left: auto;
+    margin-left: 0;
+    padding: 0; }
 
   .card-hover {
     display: grid;
@@ -756,7 +791,7 @@ footer {
 
   /* end of media query */ }
 @media only screen and (min-width: 64rem) {
-  main, header, nav {
+  main, header, nav, footer {
     max-width: 64rem;
     margin: auto; }
 

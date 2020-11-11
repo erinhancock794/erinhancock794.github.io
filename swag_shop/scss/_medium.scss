@@ -2,31 +2,63 @@
 nav button {
 	display: none;
 }
+#navList {
+	height: auto;
+	// overflow: hidden;
+  }
+
 nav{
-	background-color: rgb(4, 76, 94);
-}
-nav li {
-	float: left;
-	
+	background-color: $menuColorSec;
 }
 
 
 nav ul {
 	padding-left: $gutter;
-	display: block;
-	margin-left:2%;
-
+	margin: 0;
+	// display: block;
+	// margin-left:2%;
 }
 nav ul li a{ 
+	display: block;
 	border: none;
 	padding: .8rem 1rem;
-
-
 }
 
-nav ul.hide{
-	display:block;
+ul>li{
+	float: left;
 }
+
+ul li ul{
+	z-index: 998;
+	position: absolute;
+	background-color: darken($menuColorSec, 5%);
+	left: 999em;
+	width: 8em;
+	margin: 0;
+	float: left;
+}
+
+// ul li ul li{
+// 	border:  none;
+// 	color: red;
+// }
+
+ul li:hover ul{
+	left: auto;
+	// width: 100%;
+	// width: 8em;
+	margin-left: 0;
+	padding:0;
+}
+
+ul li:hover ul li a{
+	// left: auto;
+	// padding-right: 50px;
+}
+
+// nav ul.hide{
+// 	display:block;
+// }
 
 
 .card-hover {

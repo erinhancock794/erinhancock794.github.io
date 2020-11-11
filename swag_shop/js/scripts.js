@@ -1,3 +1,4 @@
 function toggleMenu() {
-    document.getElementById("navList").classList.toggle("hide")
+    document.getElementById("hamburgerBtn").classList.toggle("open");
+    document.getElementById("navList").classList.toggle("open");
 }
