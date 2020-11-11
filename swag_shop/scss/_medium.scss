@@ -4,7 +4,6 @@ nav button {
 }
 #navList {
 	height: auto;
-	// overflow: hidden;
   }
 
 nav{
@@ -15,8 +14,6 @@ nav{
 nav ul {
 	padding-left: $gutter;
 	margin: 0;
-	// display: block;
-	// margin-left:2%;
 }
 nav ul li a{ 
 	display: block;
@@ -38,15 +35,8 @@ ul li ul{
 	float: left;
 }
 
-// ul li ul li{
-// 	border:  none;
-// 	color: red;
-// }
-
 ul li:hover ul{
 	left: auto;
-	// width: 100%;
-	// width: 8em;
 	margin-left: 0;
 	padding:0;
 }
