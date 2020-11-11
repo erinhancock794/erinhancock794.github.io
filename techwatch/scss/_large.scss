@@ -9,9 +9,7 @@ div.pageWrapper{
   max-width: 64rem;
   margin: auto;
 }
-nav {
-    height: 100%;
-}
+
 nav ul {
     padding-left: 1%;
 }
@@ -19,6 +17,6 @@ nav ul {
 nav ul li {
   flex-basis: auto;
 
-  a {padding: 0.6rem 1rem;}
+  a {padding: 0.7rem 1rem;}
 }
  /* end of media query */

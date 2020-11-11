@@ -18,13 +18,15 @@ div.pageWrapper {
   }
 
 
-  /* body rules */
+  /* ---- body ---- */
 body {
     font-family: $fontText;
     font-weight: $regularWeight;
     font-size: 14px;
     background-color: rgb(208, 208, 208);
 }
+
+  /* ---- header ---- */
 
 header {
     grid-area: header;
@@ -38,7 +40,7 @@ header {
 }
 
 
-/*navigation*/
+/*--- navigation* ---*/
 
 a.jump{
     display: block;
@@ -53,7 +55,6 @@ nav {
     background-color: darken($menuColor, 20%);
     height: 100vh;
 }
-
 
 nav ul{
     list-style-type: none;

@@ -8,8 +8,12 @@ div.pageWrapper {
 	grid-template-rows: auto;
   }
 
+  /* --navigation --*/
   a.jump{
 	  display: none;
+  }
+  nav{
+	  height: auto;
   }
 
   h1{

@@ -405,13 +405,14 @@ div.pageWrapper {
   grid-template-areas: "hamburger" "header" "content" "footer" "navigation";
   grid-template-columns: 100%; }
 
-/* body rules */
+/* ---- body ---- */
 body {
   font-family: "Quicksand";
   font-weight: 300;
   font-size: 14px;
   background-color: #d0d0d0; }
 
+/* ---- header ---- */
 header {
   grid-area: header;
   font-family: "Quicksand";
@@ -421,7 +422,7 @@ header {
   header img {
     height: 10px; }
 
-/*navigation*/
+/*--- navigation* ---*/
 a.jump {
   display: block;
   width: 60px;
@@ -529,8 +530,12 @@ footer {
     grid-template-columns: 150px auto;
     grid-template-rows: auto; }
 
+  /* --navigation --*/
   a.jump {
     display: none; }
+
+  nav {
+    height: auto; }
 
   h1 {
     font-size: 1.8rem; }
@@ -567,16 +572,13 @@ footer {
     max-width: 64rem;
     margin: auto; }
 
-  nav {
-    height: 100%; }
-
   nav ul {
     padding-left: 1%; }
 
   nav ul li {
     flex-basis: auto; }
     nav ul li a {
-      padding: 0.6rem 1rem; }
+      padding: 0.7rem 1rem; }
 
   /* end of media query */ }
 
