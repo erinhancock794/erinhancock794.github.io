@@ -6,11 +6,14 @@ div.pageWrapper{
     "content"
     "footer";
   grid-template-columns: auto;
-  margin: auto;
-  max-width: 1200px;
+  width: 1200px;
+
+  margin: 0 auto;
 
 }
-
+header{
+    width: 1200px;
+}
 nav ul {
     padding-left: 1%;
 }

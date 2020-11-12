@@ -525,8 +525,7 @@ footer {
 @media only screen and (min-width: 560px) {
   div.pageWrapper {
     grid-template-areas: "header header" "navigation content" "footer footer";
-    grid-template-columns: 150px auto;
-    grid-template-rows: auto; }
+    grid-template-columns: 150px auto; }
 
   /* --navigation --*/
   a.jump {
@@ -578,8 +577,11 @@ footer {
   div.pageWrapper {
     grid-template-areas: "header" "navigation" "content" "footer";
     grid-template-columns: auto;
-    margin: auto;
-    max-width: 1200px; }
+    width: 1200px;
+    margin: 0 auto; }
+
+  header {
+    width: 1200px; }
 
   nav ul {
     padding-left: 1%; }
