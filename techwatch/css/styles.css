@@ -420,7 +420,7 @@ header {
   padding: 0.5rem 2vw;
   width: 100vw; }
   header img {
-    height: 10px; }
+    height: 100px; }
 
 /*--- navigation* ---*/
 a.jump {
@@ -511,8 +511,6 @@ p {
 
 footer {
   grid-area: footer;
-  width: 100vw;
-  position: bottom;
   background-color: #eee;
   text-align: center;
   padding: 1rem 2vw;
@@ -537,40 +535,51 @@ footer {
   nav {
     height: auto; }
 
+  nav ul li a {
+    text-align: center; }
+
   h1 {
     font-size: 1.8rem; }
 
-  .rowOne, .rowTwo, .rowThree {
+  .rowOne, .rowThree {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: .5rem; }
-    .rowOne .columnOne, .rowTwo .columnOne, .rowThree .columnOne {
+    .rowOne .columnOne, .rowThree .columnOne {
       order: 1;
       grid-column: 1 / span 2; }
-    .rowOne .columnTwo, .rowTwo .columnTwo, .rowThree .columnTwo {
+    .rowOne .columnTwo, .rowThree .columnTwo {
       order: 3;
       grid-column: 1 / span 2; }
-    .rowOne .columnThree, .rowTwo .columnThree, .rowThree .columnThree {
+    .rowOne .columnThree, .rowThree .columnThree {
       order: 2;
-      grid-column: 1 / span 2; }
+      grid-column: 3 / span 2;
+      grid-row: 1 / span 2; }
+    .rowOne img, .rowThree img {
+      width: 100%; }
 
-  .rowTwo columnOne {
-    order: 1;
-    grid-column: 2 / span 2; }
-  .rowTwo .columnTwo {
-    order: 3;
-    grid-column: 2 / span 2; }
-  .rowTwo .columnThree {
-    order: 2;
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2; }
+  .rowTwo {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: .5rem; }
+    .rowTwo .columnOne {
+      order: 1;
+      grid-column: 2 / span 2; }
+    .rowTwo .columnTwo {
+      order: 3;
+      grid-column: 2 / span 2; }
+    .rowTwo .columnThree {
+      order: 2;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 2; }
+    .rowTwo img {
+      width: 100%; }
 
   /* end of media query */ }
 @media only screen and (min-width: 64rem) {
   div.pageWrapper {
     grid-template-areas: "header" "navigation" "content" "footer";
     grid-template-columns: auto;
-    max-width: 64rem;
-    margin: auto; }
+    margin: auto;
+    max-width: 1200px; }
 
   nav ul {
     padding-left: 1%; }
@@ -579,6 +588,9 @@ footer {
     flex-basis: auto; }
     nav ul li a {
       padding: 0.7rem 1rem; }
+
+  .rowOne img, .rowTwo img, .rowThree img {
+    width: 70%; }
 
   /* end of media query */ }
 

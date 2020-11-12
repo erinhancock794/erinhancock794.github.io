@@ -34,7 +34,7 @@ header {
     background-color: $primaryColor;
     padding: .5rem $gutter;
     width: 100vw;
-    img{ height: 10px}
+    img{ height: 100px}
 
     
 }
@@ -148,8 +148,8 @@ p {
 
   footer {
     grid-area: footer;
-    width: 100vw;
-    position: bottom;
+    // width: 100vw;
+    // position: bottom;
     background-color: $footerColor;
     text-align: center;
     padding: 1rem $gutter;

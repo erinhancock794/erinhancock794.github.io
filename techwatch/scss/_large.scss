@@ -6,8 +6,9 @@ div.pageWrapper{
     "content"
     "footer";
   grid-template-columns: auto;
-  max-width: 64rem;
   margin: auto;
+  max-width: 1200px;
+
 }
 
 nav ul {
@@ -18,5 +19,11 @@ nav ul li {
   flex-basis: auto;
 
   a {padding: 0.7rem 1rem;}
+}
+
+.rowOne, .rowTwo, .rowThree {
+    img {
+        width: 70%;
+    }
 }
  /* end of media query */
