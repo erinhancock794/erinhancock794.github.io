@@ -1,0 +1,32 @@
+
+div.pageWrapper{
+    grid-template-areas:
+    "header"
+    "navigation"
+    "content"
+    "footer";
+  grid-template-columns: auto;
+  width: 1200px;
+
+  margin: 0 auto;
+
+}
+header{
+    width: 1200px;
+}
+nav ul {
+    padding-left: 1%;
+}
+
+nav ul li {
+  flex-basis: auto;
+
+  a {padding: 0.7rem 1rem;}
+}
+
+.rowOne, .rowTwo, .rowThree {
+    img {
+        width: 70%;
+    }
+}
+ /* end of media query */
