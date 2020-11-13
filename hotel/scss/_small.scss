@@ -84,21 +84,26 @@ nav ul li a:hover {
 
 
 /*---Main---*/
-#inventoryWrapper{
+div#myCards{
     display: grid;
     grid-template-columns: 1fr;
-}
-figure{
-    position: relative;
-}
-figcaption{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: purple;
-    color: white;
-    padding: .3rem $gutter;
-}
+
+    figure{
+        margin:0;
+        position: relative;
+        width: 100%;
+        img {width: 100%}
+        figcaption{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(240, 105, 105, 0.5);
+            color: black;
+            padding: .3rem $gutter;
+        } //end of caption
+        
+    } //end of figure
+} //END OF INVENTORY WRAPPER DIV
 
 section div{
     display: grid;

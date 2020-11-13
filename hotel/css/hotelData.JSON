@@ -1,0 +1,25 @@
+[   {
+    "name":"Southern Serenade",
+    "photo":"../images/serenade.jpg",
+    "address":["1514 Ocean View St."," Bali, Indonesia 80351"],
+    "phone":"1-307-886-1234"
+    },
+    {
+    "name":"The Ao Nang Hotel",
+    "photo":"images/thailand.jpg",
+    "address":["Ao Nang Dr."," Ao Nang,Thailand 81000"],
+    "phone":"+66-303-248-2020"
+    },
+    {
+    "name":"Valley View Hotel",
+    "photo":"images/mexico.jpg",
+    "address":["155 Main St."," Nuevo Vallarta, Mexico 63735"],
+    "phone":"+52-800-555-1234"
+    },
+    {
+    "name":"The Sweet Escape",
+    "photo":"images/mexico2.jpg",
+    "address":["175 North St."," El Porvenir, Mexico, 32790"],
+    "phone":"+52-800-555-5678"
+    }
+]

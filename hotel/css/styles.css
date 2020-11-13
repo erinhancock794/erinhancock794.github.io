@@ -457,20 +457,22 @@ nav ul li a:hover {
   background-color: #555; }
 
 /*---Main---*/
-#inventoryWrapper {
+div#myCards {
   display: grid;
   grid-template-columns: 1fr; }
-
-figure {
-  position: relative; }
-
-figcaption {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: purple;
-  color: white;
-  padding: 0.3rem 2vw; }
+  div#myCards figure {
+    margin: 0;
+    position: relative;
+    width: 100%; }
+    div#myCards figure img {
+      width: 100%; }
+    div#myCards figure figcaption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(240, 105, 105, 0.5);
+      color: black;
+      padding: 0.3rem 2vw; }
 
 section div {
   display: grid;
@@ -520,7 +522,7 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  main div #inventoryWrapper {
+  main div #myCards {
     grid-template-columns: 1fr 1fr; }
 
   /* --navigation --*/
@@ -550,22 +552,6 @@ footer {
       grid-column: 3 / span 2;
       grid-row: 1 / span 2; }
     .rowOne img, .rowThree img {
-      width: 100%; }
-
-  .rowTwo {
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: .5rem; }
-    .rowTwo .columnOne {
-      order: 1;
-      grid-column: 2 / span 2; }
-    .rowTwo .columnTwo {
-      order: 3;
-      grid-column: 2 / span 2; }
-    .rowTwo .columnThree {
-      order: 2;
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 2; }
-    .rowTwo img {
       width: 100%; }
 
   /* end of media query */ }
