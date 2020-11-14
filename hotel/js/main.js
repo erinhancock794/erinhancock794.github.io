@@ -15,35 +15,50 @@ fetch(apiUrl)
     let myFigCapTag = document.createElement('figcaption');
     myFigCapTag.textContent = myList[i].name;
 
-    let myFigureTag = document.createElement('figure');
-    myFigureTag.appendChild(myImgTag);
-    myFigureTag.appendChild(myFigCapTag);
+    let mySectionTag = document.createElement('section');
+    mySectionTag.className = 'hotelCard';
 
+    let myFigureTag = document.createElement('figure');
+    myFigureTag.className = 'imageInfo';
+ 
     let myHotelInfoTag = document.createElement('div');
     myHotelInfoTag.className = "hotelInfo";
 
-    let carIcon = document.createElement('i');
-    carIcon.innerHTML = `<ion-icon name="car"></ion-icon>`;
-    let phoneIcon = document.createElement('');
-    phoneIcon.innerHTML = ` <ion-icon name="call"></ion-icon>`;
+    
+    let hotelAddressTag = document.createElement('span');
+    hotelAddressTag.className = 'hotelAddress';
+    let addressIcon = document.createElement('i');
+    addressIcon.innerHTML = `<ion-icon name="location"></ion-icon>`;
+    let address = document.createElement('p');
+    address.textContent = myList[i].address;
 
-    let mySectionTag = document.createElement('section');
-    mySectionTag.className('hotelCard');
+    let phoneTag = document.createElement('span');
+    phoneTag.className = 'phoneInfo';
+    let phoneIcon = document.createElement('i');
+    phoneIcon.innerHTML = `<ion-icon name="call"></ion-icon>`;
+    let phone = document.createElement('p');
+    phone.textContent = myList[i].phone;
+
+    
+    document.getElementById('myCards').appendChild(mySectionTag);
+
+
+    myFigureTag.appendChild(myImgTag);
+    myFigureTag.appendChild(myFigCapTag);
     mySectionTag.appendChild(myFigureTag);
     mySectionTag.appendChild(myHotelInfoTag);
-
- 
-
-
-
-    // myFigureTag.className = "happyCamper";
-    // let theIconLeftTag = document.createElement('ion-icon')
-    // theIconLeftTag.name ="icon ion-md-car";
-    // myFigureTag.appendChild(theIconLeftTag);
+    myHotelInfoTag.appendChild(hotelAddressTag);
+    myHotelInfoTag.appendChild(phoneTag);
+    hotelAddressTag.appendChild(addressIcon);
+    hotelAddressTag.appendChild(address);
+    phoneTag.appendChild(phoneIcon);
+    phoneTag.appendChild(phone);
 
 
 
-    document.getElementById('myCards').appendChild(myFigureTag);
+
+
+
     }
     
 }); //end of arrow function
