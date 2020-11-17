@@ -426,6 +426,9 @@ header a {
   flex-wrap: wrap;
   justify-content: center; }
 
+h1 {
+  text-align: center; }
+
 .theDay {
   background-color: #54a9a9;
   border: 1px solid #595959;

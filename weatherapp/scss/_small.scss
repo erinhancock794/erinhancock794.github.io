@@ -34,10 +34,6 @@ header a{
 
 
 /*---Main---*/
-// #location{
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     }
 
 #forecast{
     display: flex;
@@ -45,6 +41,9 @@ header a{
     justify-content: center;
 }
 
+h1{
+    text-align: center;
+}
 .theDay{
     background-color: $primaryColor;
     border: 1px solid rgb(89, 89, 89);
@@ -69,10 +68,6 @@ footer p{
     font-size: 1rem;
 }
 
-// img{
-//     width: 20%;
-// }
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -81,6 +76,3 @@ footer p{
   clear: both;
 }
 
-
-//img sizes: lead img needs to be 906px wide
-// teaser img needs to be 350px
