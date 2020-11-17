@@ -409,85 +409,43 @@ body {
 
 /* ---- header ---- */
 header {
-  grid-area: header;
   font-family: "Quicksand";
-  background-color: orange;
+  background-color: #54a9a9;
   padding: 0.5rem 2vw;
-  width: 100vw; }
+  width: 100vw;
+  box-shadow: 2px 2px 4px; }
 
-/*--- navigation* ---*/
-nav {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: orange; }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex; }
-
-nav ul li {
-  font-family: "Quicksand";
-  font-size: .8rem;
-  padding: 0 1% 0 1%;
-  flex-basis: 33.3%;
-  display: block; }
-
-nav ul li a {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  text-transform: uppercase;
-  padding: .5rem 2%;
-  color: #eee;
-  text-decoration: none; }
-
-nav ul li.active a {
-  background-color: #6f6f6f; }
-
-nav ul li ion-icon {
-  align-self: center;
-  font-size: 2.5rem; }
+header a {
+  text-decoration: none;
+  text-align: center;
+  color: white; }
 
 /*---Main---*/
-div#myCards {
-  display: grid;
-  grid-template-columns: 1fr; }
-  div#myCards figure {
-    margin: 0;
-    position: relative;
-    width: 100%; }
-    div#myCards figure img {
-      width: 100%; }
-    div#myCards figure figcaption {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background-color: rgba(45, 45, 45, 0.8);
-      color: white;
-      padding: 0.3rem 2vw; }
-  div#myCards .hotelInfo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 60px;
-    background-color: #888888; }
-  div#myCards .hotelInfo i {
-    font-size: 1.5rem;
-    padding: 2%;
-    margin-left: 2%;
-    display: flex;
-    align-content: center; }
-  div#myCards .hotelAddress, div#myCards .phoneInfo {
-    margin: 2%;
-    display: flex;
-    align-items: center;
-    max-width: 180px; }
-  div#myCards div span p {
-    padding-left: 1.6rem; }
+#forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.theDay {
+  background-color: #54a9a9;
+  border: 1px solid #595959;
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 3%;
+  box-shadow: 2px 2px 4px;
+  text-align: center; }
+
+p {
+  font-size: 2rem; }
+
+.dayOfWeek {
+  padding: 2%;
+  font-size: 1.5rem;
+  background-color: #438787; }
+
+footer p {
+  text-align: center;
+  font-size: 1rem; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -496,13 +454,15 @@ div#myCards {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  nav ul li {
-    width: auto; }
+  .theDay {
+    width: 30%;
+    margin: 2% 1%; } }
+@media only screen and (min-width: 64rem) {
+  #forecast {
+    flex-wrap: nowrap; }
 
-  nav ul li a {
-    padding: .5rem 1rem; }
-
-  div#myCards {
-    grid-template-columns: 1fr 1fr; } }
+  .theDay {
+    width: 20%;
+    margin: 2% 1%; } }
 
 /*# sourceMappingURL=styles.css.map */
