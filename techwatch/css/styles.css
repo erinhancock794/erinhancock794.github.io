@@ -469,7 +469,8 @@ div#hamburger {
   background-color: #555; }
 
 div#hamburger a {
-  color: white; }
+  text-decoration: none;
+  text-emphasis-color: white; }
 
 /*---Main---*/
 main {
