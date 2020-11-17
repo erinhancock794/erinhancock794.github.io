@@ -17,8 +17,7 @@ body {
 
 header {
     grid-area: header;
-    font-family: $fontFamily;
-    background-color: $primaryColor;
+    font-family: $fontFamily;    background-color: orange;
     padding: .5rem $gutter;
     width: 100vw;
     
@@ -82,7 +81,9 @@ div#myCards{
         margin:0;
         position: relative;
         width: 100%;
-        img {width: 100%}
+        img {
+            width: 100%;
+        }
         figcaption{
             position: absolute;
             bottom: 0;
@@ -98,7 +99,7 @@ div#myCards{
 .hotelInfo{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     background-color: lighten($menuColor, 20%);
     
 
@@ -108,15 +109,19 @@ div#myCards{
     font-size: 1.5rem;
     padding: 2%;
     margin-left: 2%;
+    display: flex;
+    align-content: center;
 
     
 }
 
-.hotelAddress{
+.hotelAddress, .phoneInfo{
+    margin: 2%; 
     display: flex;
     align-items: center;
-    background-color: red;
+    max-width: 180px;
 }
+
 
 div span p{
     padding-left: 1.6rem;

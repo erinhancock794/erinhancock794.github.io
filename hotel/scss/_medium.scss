@@ -1,25 +1,8 @@
 
-main{
-	div #myCards{
-		grid-template-columns: 1fr 1fr;
-	} //end wrapper
-} //end main
-
-  /* --navigation --*/
-  a.jump{
-	  display: none;
-  }
-  nav{
-	  height: auto;
-  }
-  nav ul li a {
-	text-align: center;
-  }
-
-  h1{
-	  font-size: 1.8rem;
-  }
+    nav ul li {width: auto;}
+    nav ul li a{padding: .5rem 1rem;}
 
 
-
- /* end of media query */
+div#myCards {
+  grid-template-columns: 1fr 1fr;
+}

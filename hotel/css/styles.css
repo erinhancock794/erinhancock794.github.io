@@ -411,7 +411,7 @@ body {
 header {
   grid-area: header;
   font-family: "Quicksand";
-  background-color: #9e493a;
+  background-color: orange;
   padding: 0.5rem 2vw;
   width: 100vw; }
 
@@ -473,16 +473,19 @@ div#myCards {
   div#myCards .hotelInfo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     background-color: #888888; }
   div#myCards .hotelInfo i {
     font-size: 1.5rem;
     padding: 2%;
-    margin-left: 2%; }
-  div#myCards .hotelAddress {
+    margin-left: 2%;
+    display: flex;
+    align-content: center; }
+  div#myCards .hotelAddress, div#myCards .phoneInfo {
+    margin: 2%;
     display: flex;
     align-items: center;
-    background-color: red; }
+    max-width: 180px; }
   div#myCards div span p {
     padding-left: 1.6rem; }
 
@@ -493,23 +496,14 @@ div#myCards {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  main div #myCards {
-    grid-template-columns: 1fr 1fr; }
-
-  /* --navigation --*/
-  a.jump {
-    display: none; }
-
-  nav {
-    height: auto; }
+  nav ul li {
+    width: auto; }
 
   nav ul li a {
-    text-align: center; }
+    padding: .5rem 1rem; }
 
-  h1 {
-    font-size: 1.8rem; }
-
-  /* end of media query */ }
+  div#myCards {
+    grid-template-columns: 1fr 1fr; } }
 @media only screen and (min-width: 64rem) {
   div.pageWrapper {
     grid-template-areas: "header" "navigation" "content" "footer";
