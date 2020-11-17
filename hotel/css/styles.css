@@ -504,27 +504,5 @@ div#myCards {
 
   div#myCards {
     grid-template-columns: 1fr 1fr; } }
-@media only screen and (min-width: 64rem) {
-  div.pageWrapper {
-    grid-template-areas: "header" "navigation" "content" "footer";
-    grid-template-columns: auto;
-    width: 1200px;
-    margin: 0 auto; }
-
-  header {
-    width: 1200px; }
-
-  nav ul {
-    padding-left: 1%; }
-
-  nav ul li {
-    flex-basis: auto; }
-    nav ul li a {
-      padding: 0.7rem 1rem; }
-
-  .rowOne img, .rowTwo img, .rowThree img {
-    width: 70%; }
-
-  /* end of media query */ }
 
 /*# sourceMappingURL=styles.css.map */
