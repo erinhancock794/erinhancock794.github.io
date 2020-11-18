@@ -4,6 +4,16 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body, main{
+    background-color: rgb(242, 242, 242);
+}
+#hamburgerBtn{
+    color: $menuColor;
+    border: none;
+    font-size: 1.5rem;
+    // margin-left: 2%;
+}
+
 
   #hamburgerBtn span:nth-child(1){
     display: block;
@@ -69,8 +79,8 @@ header {
 
 
 nav {
-    grid-area: navigation;
-    background-color: darken($menuColor, 20%);
+    // grid-area: navigation;
+    // background-color: darken($menuColor, 20%);
 }
 
 nav ul{
@@ -90,12 +100,18 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: .5rem 2%;
-    color: #eee;
+    color: rgb(195, 195, 195);
     text-decoration: none;
     border-top: 1px solid rgba(0,0,0,.5);
+
 } 
+
+nav ul li ion-icon{
+    padding-right: 2%;
+}
 nav ul li.active a{
     background-color: lighten($menuColor, 10%);
+    color: white;
 }
 
 
@@ -105,6 +121,7 @@ nav ul li a:hover {
 
 
 /*---Main---*/
+
 
 /* -------HERO IMAGE-------*/
 .heroImg img{
@@ -132,6 +149,9 @@ h1, h2, h3 {
 
     .sectionOne{
         grid-column: 1 / span 2;
+    }
+    .sectionTwo{
+            text-align: right;
     }
 }
 
@@ -169,14 +189,29 @@ h1, h2, h3 {
 
 .techGrid{
     display:grid;
-    width: 100%;
+    width: 98%;
+
     // flex-wrap: wrap;
-    // margin: 0 2vw;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    padding-right: 2vw;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: auto;
+    
     img {
-        display: flex;
+        width: 98%;
     }
+    .techText{
+        grid-column: 1 / span 1;
+    }
+    .graph{
+        grid-column: 2 / span 1;
+    }
+}
+
+
+.sponsors{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
 }
 
 

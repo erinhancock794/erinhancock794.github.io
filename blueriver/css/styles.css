@@ -400,6 +400,14 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+body, main {
+  background-color: #f2f2f2; }
+
+#hamburgerBtn {
+  color: #9d9d9d;
+  border: none;
+  font-size: 1.5rem; }
+
 #hamburgerBtn span:nth-child(1) {
   display: block; }
 
@@ -447,10 +455,6 @@ header {
   width: 100vw; }
 
 /*--- navigation* ---*/
-nav {
-  grid-area: navigation;
-  background-color: #222222; }
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -467,15 +471,19 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: .5rem 2%;
-  color: #eee;
+  color: #c3c3c3;
   text-decoration: none;
   border-top: 1px solid rgba(0, 0, 0, 0.5); }
 
+nav ul li ion-icon {
+  padding-right: 2%; }
+
 nav ul li.active a {
-  background-color: #6f6f6f; }
+  background-color: #b7b7b7;
+  color: white; }
 
 nav ul li a:hover {
-  background-color: #555; }
+  background-color: #9d9d9d; }
 
 /*---Main---*/
 /* -------HERO IMAGE-------*/
@@ -498,6 +506,8 @@ h1, h2, h3 {
     font-size: 1.4rem; }
   .infoBanner .sectionOne {
     grid-column: 1 / span 2; }
+  .infoBanner .sectionTwo {
+    text-align: right; }
 
 #aboutUsTitle {
   border-bottom: 1px solid #f1f1f1;
@@ -523,11 +533,19 @@ h1, h2, h3 {
 
 .techGrid {
   display: grid;
-  width: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto; }
+  width: 98%;
+  padding-right: 2vw; }
   .techGrid img {
-    display: flex; }
+    width: 98%; }
+  .techGrid .techText {
+    grid-column: 1 / span 1; }
+  .techGrid .graph {
+    grid-column: 2 / span 1; }
+
+.sponsors {
+  display: grid;
+  background-color: white;
+  grid-template-columns: 1fr 1fr; }
 
 footer {
   grid-area: footer;
