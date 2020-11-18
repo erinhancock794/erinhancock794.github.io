@@ -1,0 +1,204 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+  #hamburgerBtn span:nth-child(1){
+    display: block;
+  }
+  #hamburgerBtn span:nth-child(2){
+    display: none;
+  }
+  
+  #hamburgerBtn.open span:nth-child(1){
+    display: none;
+  }
+  #hamburgerBtn.open span:nth-child(2){
+    display: block;
+  }
+
+  #navList {
+    height: 0;
+    overflow: hidden;
+  }
+  #navList.open{
+    height:auto;
+  }
+
+
+#navList li ul{
+    display: none;
+
+  }
+  
+  #navList li.parent a::after {
+    content: ' \25BC';
+  
+  }
+  
+  #navList li:hover ul{
+    display: block;
+  }
+  nav li {
+    list-style-type: none;
+      font-family: $fontFamily;
+      font-size: .8rem;
+  
+  }
+
+  /* ---- body ---- */
+body {
+    font-family: $fontText;
+    font-weight: $regularWeight;
+    font-size: 14px;
+}
+
+  /* ---- header ---- */
+
+header {
+    grid-area: header;
+    font-family: $fontFamily;
+    padding: .5rem $gutter;
+    width: 100vw; 
+}
+
+
+/*--- navigation* ---*/
+
+
+nav {
+    grid-area: navigation;
+    background-color: darken($menuColor, 20%);
+}
+
+nav ul{
+    list-style-type: none;
+    margin:0; 
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+    font-family: $fontFamily;
+    font-size: .8rem;
+    padding: 0 1% 0 1%;
+    flex-basis: 100%;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem 2%;
+    color: #eee;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,.5);
+} 
+nav ul li.active a{
+    background-color: lighten($menuColor, 10%);
+}
+
+
+nav ul li a:hover {
+    background-color: $menuColor;
+};
+
+
+/*---Main---*/
+
+/* -------HERO IMAGE-------*/
+.heroImg img{
+    max-width: 100%;
+}
+
+
+h1, h2, h3 {
+    color: $headerColor;
+}
+
+.infoBanner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0 2% 0 2%;
+    background-color: black;
+    color: white;
+    h2 {
+        color: yellow;
+    }
+    #success{
+        font-size: 1.4rem;
+    }
+
+    .sectionOne{
+        grid-column: 1 / span 2;
+    }
+}
+
+
+
+
+#aboutUsTitle{
+    border-bottom: 1px solid rgb(241, 241, 241);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.aboutUsGrid, .techGrid{
+    display:grid;
+    margin: 0 2vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    h3{
+        text-align: center;
+        margin: 2%;
+    }
+    p{
+        margin: 2% 0 20px 0;
+        display:block;
+        text-align:left;
+        font-size: .75rem;
+    }
+    .teaser{
+        padding: .2rem 2vw;
+    }
+    .teaser img {
+        width: 100%;
+    }
+
+}
+
+.techGrid{
+    display:grid;
+    width: 100%;
+    // flex-wrap: wrap;
+    // margin: 0 2vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    img {
+        display: flex;
+    }
+}
+
+
+  footer {
+    grid-area: footer;
+    // width: 100vw;
+    // position: bottom;
+    background: $footerColor;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+//img sizes: lead img needs to be 906px wide
+// teaser img needs to be 350px
