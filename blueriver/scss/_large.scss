@@ -1,2 +1,31 @@
+main, header, nav{
+	max-width: 900px;
+	margin: 0 auto;
+}
 
- /* end of media query */
+nav ul{
+display: block;}
+
+
+.infoBanner{
+    max-width: 1020px;
+    margin: 0 auto;
+    .sectionOne, .sectionTwo{
+        justify-self: center;
+    }
+
+}
+.infoWrapper{
+width: 100%;
+align-content: center;
+}
+
+footer{
+    width: 100%;
+    padding-left: 15%;
+}
+.techGrid h3{
+    text-align: left;
+    margin-left: 0;
+    font-weight: 300;
+}

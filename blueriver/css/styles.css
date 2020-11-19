@@ -490,7 +490,8 @@ nav ul li.active a {
   color: white; }
 
 nav ul li a:hover {
-  background-color: #9d9d9d; }
+  background-color: #9d9d9d;
+  color: white; }
 
 /*---Main---*/
 /* -------HERO IMAGE-------*/
@@ -586,10 +587,6 @@ footer {
   clear: both; }
 
 @media only screen and (min-width: 560px) {
-  main, nav, header, footer {
-    max-width: 800px;
-    margin: auto; }
-
   .pageWrapper header {
     background-image: url(/images/logowithline.png); }
 
@@ -667,6 +664,30 @@ footer {
     text-align: left;
     padding-left: 2%; } }
 @media only screen and (min-width: 64rem) {
-  /* end of media query */ }
+  main, header, nav {
+    max-width: 900px;
+    margin: 0 auto; }
+
+  nav ul {
+    display: block; }
+
+  .infoBanner {
+    max-width: 1020px;
+    margin: 0 auto; }
+    .infoBanner .sectionOne, .infoBanner .sectionTwo {
+      justify-self: center; }
+
+  .infoWrapper {
+    width: 100%;
+    align-content: center; }
+
+  footer {
+    width: 100%;
+    padding-left: 15%; }
+
+  .techGrid h3 {
+    text-align: left;
+    margin-left: 0;
+    font-weight: 300; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -124,6 +124,7 @@ nav ul li.active a{
 
 nav ul li a:hover {
     background-color: $menuColor;
+    color: white;
 };
 
 
@@ -139,7 +140,9 @@ nav ul li a:hover {
 h1, h2, h3 {
     color: $headerColor;
 }
-
+.infoWrapper{
+    // background-coloGrr: black;
+}
 .infoBanner{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
