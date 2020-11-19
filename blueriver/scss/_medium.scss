@@ -1,72 +1,108 @@
 
-div.pageWrapper {
-	grid-template-areas:
-	  "header header"
-	  "navigation content"
-	  "footer footer";
-	grid-template-columns: 150px auto;
-	// grid-template-rows: auto;
-  }
-
-  /* --navigation --*/
-  a.jump{
-	  display: none;
-  }
-  nav{
-	  height: auto;
-  }
-  nav ul li a {
-	text-align: center;
-  }
-
-  h1{
-	  font-size: 1.8rem;
-  }
-
-
-  .rowOne, .rowThree {
-    grid-template-columns: 1fr 1fr 1fr;
-	column-gap: .5rem;
-    .columnOne {
-        order: 1;
-		grid-column: 1 / span 2;
-    }
-    .columnTwo{
-		order: 3;
-		grid-column: 1 / span 2;
-		// grid-row: 3 / span 1;
-
-    }
-    .columnThree{
-		order: 2;
-		grid-column: 3 / span 2;
-		grid-row: 1 / span 2;
-	}
-	img{
-        width: 100%;
-    }
+main, nav, header, footer{
+	max-width: 800px;
+	margin: auto;
+}
+.pageWrapper header{
+	background-image: url(/images/logowithline.png);
 }
 
-.rowTwo{
-    grid-template-columns: 1fr 1fr 1fr;
-	column-gap: .5rem;
-    .columnOne {
-        order: 1;
-		grid-column: 2 / span 2;
-    }
-    .columnTwo{
-		order: 3;
-		grid-column: 2 / span 2;
-		// grid-row: 3 / span 1;
+nav button {
+	display: none;
+}
+#navList{
+	overflow: inherit;
+	display: flex;
+	// flex-direction: row;
+	// background-color: white;
+	// display: flex;
+	justify-content: flex-end;
+	// height: 30px;
+}
+nav ul li{
+	flex-basis: unset;
+}
+nav ul.hide{
+	display:block;
+}
 
-    }
-    .columnThree{
+nav ul{
+	margin-bottom: 25px;
+	// padding: 10px;
+}
+
+nav ul li a{
+	display: flex;
+	border: none;
+
+}
+nav ul li ion-icon{
+    padding-right: 5px;
+}
+
+nav ul li.active a{
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgb(242, 242, 242);
+	color: darken(rgb(145, 145, 145), 80%);
+
+}
+
+nav ul li a:hover{
+	background-color: rgb(242, 242, 242);
+	color: lighten($menuColor, 15%);
+}
+
+.infoBanner{
+	margin: 2% 0 5% 0;
+}
+#aboutUsTitle{
+	font-size: 1.8rem;
+	font-weight: 400;
+
+}
+
+.aboutUsGrid{
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: stretch;
+	h3{
+		text-align: left;
+		margin: 0;
+		font-weight: 300;
+	}
+	.teaser{
+	margin: 2%;
+	padding: 0;
+	}
+}
+
+
+
+.techGrid{
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0;
+	.tech{
 		order: 2;
-		grid-column: 1 / span 1;
+	}
+	.techText{
+		order:3;
+		grid-column: 1 / span 2;
+		margin: 0 5px 0 5px;
+	}
+	.graph{
+		order: 1;
+		grid-column: 3 / span 1;
 		grid-row: 1 / span 2;
 	}
-	img{
-        width: 100%;
-    }
+
 }
- /* end of media query */
+
+.sponsors{
+	display: flex;
+	align-items: center;
+
+}
+footer {
+	text-align: left;
+	padding-left: 2%;
+}

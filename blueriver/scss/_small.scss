@@ -7,6 +7,35 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body, main{
     background-color: rgb(242, 242, 242);
 }
+
+.pageWrapper header {
+    background-image: url('/images/Smallscreenlogo.png');
+    background-repeat: no-repeat;
+    height: 65px;
+    position: relative;
+    margin-top: 2%;
+    // border-bottom: 1px solid grey;
+}
+
+
+  /* ---- body ---- */
+body {
+    font-family: $fontText;
+    font-weight: $regularWeight;
+    font-size: 14px;
+}
+
+  /* ---- header ---- */
+
+header {
+    grid-area: header;
+    font-family: $fontFamily;
+    padding: .5rem $gutter;
+    width: 100vw; 
+}
+
+
+/*--- navigation* ---*/
 #hamburgerBtn{
     color: $menuColor;
     border: none;
@@ -58,30 +87,6 @@ body, main{
   
   }
 
-  /* ---- body ---- */
-body {
-    font-family: $fontText;
-    font-weight: $regularWeight;
-    font-size: 14px;
-}
-
-  /* ---- header ---- */
-
-header {
-    grid-area: header;
-    font-family: $fontFamily;
-    padding: .5rem $gutter;
-    width: 100vw; 
-}
-
-
-/*--- navigation* ---*/
-
-
-nav {
-    // grid-area: navigation;
-    // background-color: darken($menuColor, 20%);
-}
 
 nav ul{
     list-style-type: none;
@@ -89,6 +94,7 @@ nav ul{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    
 }
 nav ul li {
     font-family: $fontFamily;
@@ -100,9 +106,10 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: .5rem 2%;
-    color: rgb(195, 195, 195);
+    color: rgb(145, 145, 145);
+
     text-decoration: none;
-    border-top: 1px solid rgba(0,0,0,.5);
+    border-top: 1px solid rgba(0,0,0,.3);
 
 } 
 
@@ -155,12 +162,21 @@ h1, h2, h3 {
     }
 }
 
-
+hr {
+	border:none;
+	height: 20px;
+	//    width: 90%;
+	  height: 50px;
+	  margin-top: 0;
+	  border-bottom: 1px solid rgb(201, 201, 201);
+	  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.1);
+	margin: -50px auto 20px; 
+  }
 
 
 #aboutUsTitle{
-    border-bottom: 1px solid rgb(241, 241, 241);
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.1);
+    padding-left: 2%;
+    margin-bottom: 0;
 }
 
 .aboutUsGrid, .techGrid{
@@ -204,6 +220,7 @@ h1, h2, h3 {
     }
     .graph{
         grid-column: 2 / span 1;
+        margin-bottom: 2%;
     }
 }
 
@@ -211,14 +228,28 @@ h1, h2, h3 {
 .sponsors{
     display: grid;
     background-color: white;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    justify-content: center;
+    align-content: center;
+    // gap: 4px;
+    // grid-auto-flow: column;
+    grid-template-rows: auto;
+    figure{
+        display: grid;
+        margin: 0;
+
+    }
+    figure img{
+        width: 80%;
+        // margin: 0 10%;
+        padding: 10% 0 10% 10%;
+    }
 }
 
 
   footer {
-    grid-area: footer;
-    // width: 100vw;
-    // position: bottom;
+
     background: $footerColor;
     text-align: center;
     color: white;
