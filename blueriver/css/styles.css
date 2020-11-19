@@ -404,7 +404,7 @@ body, main {
   background-color: #f2f2f2; }
 
 .pageWrapper header {
-  background-image: url("/images/Smallscreenlogo.png");
+  background-image: url("../images/Smallscreenlogo.png");
   background-repeat: no-repeat;
   height: 65px;
   position: relative;
@@ -588,7 +588,7 @@ footer {
 
 @media only screen and (min-width: 560px) {
   .pageWrapper header {
-    background-image: url(/images/logowithline.png); }
+    background-image: url("../images/logowithline.png"); }
 
   nav button {
     display: none; }
