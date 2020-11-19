@@ -14,7 +14,6 @@ body, main{
     height: 65px;
     position: relative;
     margin-top: 2%;
-    // border-bottom: 1px solid grey;
 }
 
 
@@ -40,7 +39,6 @@ header {
     color: $menuColor;
     border: none;
     font-size: 1.5rem;
-    // margin-left: 2%;
 }
 
 
@@ -140,9 +138,7 @@ nav ul li a:hover {
 h1, h2, h3 {
     color: $headerColor;
 }
-.infoWrapper{
-    // background-coloGrr: black;
-}
+
 .infoBanner{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -168,7 +164,6 @@ h1, h2, h3 {
 hr {
 	border:none;
 	height: 20px;
-	//    width: 90%;
 	  height: 50px;
 	  margin-top: 0;
 	  border-bottom: 1px solid rgb(201, 201, 201);
@@ -209,12 +204,7 @@ hr {
 .techGrid{
     display:grid;
     width: 98%;
-
-    // flex-wrap: wrap;
     padding-right: 2vw;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: auto;
-    
     img {
         width: 98%;
     }
@@ -235,8 +225,6 @@ hr {
     
     justify-content: center;
     align-content: center;
-    // gap: 4px;
-    // grid-auto-flow: column;
     grid-template-rows: auto;
     figure{
         display: grid;
@@ -245,7 +233,6 @@ hr {
     }
     figure img{
         width: 80%;
-        // margin: 0 10%;
         padding: 10% 0 10% 10%;
     }
 }
@@ -268,6 +255,3 @@ hr {
   clear: both;
 }
 
-
-//img sizes: lead img needs to be 906px wide
-// teaser img needs to be 350px
