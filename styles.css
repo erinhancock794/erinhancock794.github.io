@@ -1,0 +1,41 @@
+
+
+main {
+    /* display: flex; */
+    padding-left: 25px;
+}
+/* --------- HEADER---------- */
+
+header {
+    display: flex;
+    color: #FFFFFF;
+    background-color: #2e6171;
+    justify-content: center;
+    align-items: center;
+}
+.profilePic {
+    border-radius: 15px;
+}
+.centered {
+    text-align: center;
+}
+
+.intro {
+    max-width: 500px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.intro:hover {
+  text-shadow: 2px 2px #ff0000;
+}
+
+
+ /* ------------ MAIN ----------- */
+
+
+
+ /* ------------ FOOTER --------- */
+footer {
+    background-color: #b79fad;
+}
