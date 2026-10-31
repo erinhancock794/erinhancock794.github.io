@@ -9,12 +9,19 @@ header {
     display: flex;
     color: #FFFFFF;
     background-color: #2e6171;
+    flex-direction: column;
+}
+
+.profileInfo {
+    display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .profilePic {
     border-radius: 15px;
+
 }
 
 .centered {
@@ -31,6 +38,11 @@ header {
     text-shadow: 2px 2px #ff0000;
 }
 
+
+.navList {
+    display: flex;
+    justify-content: space-around;
+}
 
 /* ------------ MAIN ----------- */
 
