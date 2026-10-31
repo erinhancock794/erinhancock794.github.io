@@ -1,9 +1,8 @@
-
-
 main {
     /* display: flex; */
     padding-left: 25px;
 }
+
 /* --------- HEADER---------- */
 
 header {
@@ -13,9 +12,11 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 .profilePic {
     border-radius: 15px;
 }
+
 .centered {
     text-align: center;
 }
@@ -27,15 +28,15 @@ header {
 }
 
 .intro:hover {
-  text-shadow: 2px 2px #ff0000;
+    text-shadow: 2px 2px #ff0000;
 }
 
 
- /* ------------ MAIN ----------- */
+/* ------------ MAIN ----------- */
 
 
 
- /* ------------ FOOTER --------- */
+/* ------------ FOOTER --------- */
 footer {
-    background-color: #b79fad;
+    background-color: #6ec1da;
 }
