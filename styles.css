@@ -1,0 +1,71 @@
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    align-items: center;
+    background-color: antiquewhite;
+    background-image: url("https://st3.depositphotos.com/3580719/15014/v/450/depositphotos_150144042-stock-illustration-the-illustration-in-stained-glass.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------- HEADER---------- */
+
+header {
+    display: flex;
+    color: #FFFFFF;
+    background-color: #2e6171;
+    flex-direction: column;
+}
+
+.profileInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profilePic {
+    border-radius: 15px;
+
+}
+
+.centered {
+    text-align: center;
+}
+
+.intro {
+    max-width: 500px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.intro:hover {
+    text-shadow: 2px 2px #ff0000;
+}
+
+
+.navList {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ------------ MAIN ----------- */
+
+.sections {
+    background-color: #c7c5f1;
+}
+section {
+    padding: 15px;
+}
+/* ------------ FOOTER --------- */
+footer {
+    background-color: #6ec1da;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
